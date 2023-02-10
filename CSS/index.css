@@ -3,11 +3,24 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:sans-serif;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
 body{
     background-color: #0a192f;
+}
+
+
+body::-webkit-scrollbar{
+    width:  8px;
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: rgb(97, 96, 96);
 }
 
 #nav-menu{
@@ -18,7 +31,9 @@ body{
     height: 90px;
     display: flex;
     justify-content: flex-end;
-    border: 1px solid white;
+    background-color: rgba(10, 25, 47, 0.85);
+    backdrop-filter: blur(8px);
+    margin-bottom: 90px;
 }
 
 #nav-menu div{
@@ -32,7 +47,6 @@ body{
 
 #nav-menu div a{
     color: #8892b0;
-    text-decoration: none;
 }
 
 #nav-menu div a span{
@@ -56,18 +70,18 @@ body{
 .resume:focus-visible {
     box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
     transition: box-shadow .2s;
-  }
-  
-  .resume:active {
+}
+
+.resume:active {
     transform: scale(.96);
-  }
+}
   
-  .resume:disabled {
+.resume:disabled {
     border-color: #DDDDDD;
     color: #DDDDDD;
     cursor: not-allowed;
     opacity: 1;
-  }
+}
 
 #home{
     height: 5000px;
@@ -76,32 +90,5 @@ body{
     margin: auto;
 }
 
-/* <!-- HTML !-->
-<button class="button-23" role="button">Button 23</button> */
-
-/* CSS */
-.button-23 {
-  background-color: #FFFFFF;
-  border: 1px solid #222222;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: #222222;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 20px;
-  margin: 0;
-  outline: none;
-  padding: 13px 23px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  touch-action: manipulation;
-  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
-  user-select: none;
-  -webkit-user-select: none;
-  width: auto;
-}
+/* =-=-=-=-=-=-=-=-=-=-=-=-==-=-=HOME-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=- */
 
