@@ -199,5 +199,53 @@ button:focus-visible {
 /* =-=-=-=--=-=-=--=-=-=-=-=-=-=--=-=Skills=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 #skills{
-    
+    width: 65%;
+    margin: auto;
+    margin-top: 150px;
+    border: 1px solid white;
+    color: white;
+}
+
+#skills-1{
+    display: flex;
+    justify-content : end;
+    align-items: center;
+    color: white;
+}
+
+#skills-1 > p{
+    color: aqua;
+    font-size: 19px;
+    margin-right: 15px;
+}
+
+#skills-1 > h2{
+    margin-right: 15px;
+}
+
+#skills-1 > hr{
+    width: 300px;
+    color: gray;
+}
+
+.skills-card{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.skills-card > div{
+    display: flex;
+    width: 45%;
+    border: 1px solid white;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.skills-card > div > img{
+    width: 35px;
 }
