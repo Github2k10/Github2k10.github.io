@@ -59,11 +59,15 @@ button{
     border-radius: 5px;
     background-color: #0a192f;
     box-sizing: border-box;
-    color: aqua;
     outline: none;
+    color: aqua;
     cursor: pointer;
     text-decoration: none;
     transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+}
+
+#resume-button-2{
+    color: aqua;
 }
 
 button:focus-visible {
@@ -183,10 +187,17 @@ button:focus-visible {
     margin: 20px;
 }
 
-#user-detail-intro > img{
+.home-img{
     width: 300px;
     height: 300px;
     border: 1px solid aqua;
     margin-top: 50px;
     margin-left: 50px;
+}
+
+
+/* =-=-=-=--=-=-=--=-=-=-=-=-=-=--=-=Skills=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+#skills{
+    
 }
