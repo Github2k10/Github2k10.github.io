@@ -145,5 +145,17 @@ button:focus-visible {
 /* =-=-=-=-=-=-=-=-=-=-=-=--=-=-ABOUT=---=-=-=-==-=-=-=-=-=-=--=-=-=-=-==-*/
 
 #about{
-    
+    border: 1px solid white;
+    width: 65%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#about :first-child{
+    display: flex;
+    color: white;
+}
+
+#about :first-child p{
+    color: rgb(0, 255, 255);
 }
