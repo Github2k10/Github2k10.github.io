@@ -5,6 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio</title>
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+        />
         <link rel="stylesheet" href="./CSS/index.css">
     </head>
     <body>
@@ -25,10 +29,10 @@
 
         <section id="icon">
 
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
+            <i id="git" class="fa-brands fa-github"></i>
+            <i id="linkin" class="fa-brands fa-linkedin-in"></i>
+            <i id="twitter" class="fa-brands fa-twitter"></i>
+            <i id="insta" class="fa-brands fa-instagram"></i>
             <div class="vertical"></div>
         </section>
 
@@ -143,6 +147,9 @@
                         <br>
                         <img id="github-streak-stats"
                             src="https://github-readme-streak-stats.herokuapp.com?user=github2k10&theme=gruvbox">
+                        
+                        <div class="calendar" class="react-activity-calendar">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -163,3 +170,15 @@
 
 <script src="https://kit.fontawesome.com/1bffa3735e.js" crossorigin="anonymous"></script>
 <script src="./Script/index.js"></script>
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+<script>
+    GitHubCalendar(".calendar", "Github2k10");
+    GitHubCalendar(".calendar", "Github2k10", { responsive: true });
+    GitHubCalendar(".calendar", "Github2k10", {
+       proxy (username) {
+         return fetch(`https://your-proxy.com/github?user=${username}`)
+       }
+    }).then(r => r.text())
+</script>

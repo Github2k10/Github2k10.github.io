@@ -101,7 +101,8 @@ button:focus-visible {
 }
 
 #icon > i:hover{
-    color: rgb(0, 255, 255);
+    color: rgb(83, 230, 227);
+    transition: 0.3s;
 }
 
 .vertical {
@@ -280,4 +281,27 @@ button:focus-visible {
 
 #github-streak-stats{
     margin: 20px;
+}
+
+.calendar{
+    font-size: 15px;
+    border: 1px solid aqua;
+    margin-top: 20px;
+}
+
+.contrib-number{
+    color:rgb(83, 230, 227);
+}
+
+:root{
+    --color-calendar-graph-day-bg:  #00000;
+}
+
+.contrib-column{
+    border-top: 1px solid aqua;
+    border-left: 1px solid aqua;
+}
+
+.js-calendar-graph-svg{
+    padding: 20px;
 }
