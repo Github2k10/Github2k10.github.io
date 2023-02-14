@@ -62,7 +62,6 @@ button{
     outline: none;
     color: aqua;
     cursor: pointer;
-    text-decoration: none;
     transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
 }
 
@@ -77,13 +76,6 @@ button:focus-visible {
 
 .resume:active {
     transform: scale(.96);
-}
-  
-.resume:disabled {
-    border-color: #DDDDDD;
-    color: #DDDDDD;
-    cursor: not-allowed;
-    opacity: 1;
 }
 
 #home{
@@ -148,7 +140,7 @@ button:focus-visible {
 /* =-=-=-=-=-=-=-=-=-=-=-=--=-=-ABOUT=---=-=-=-==-=-=-=-=-=-=--=-=-=-=-==-*/
 
 #about{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     width: 65%;
     margin: auto;
     margin-top: 50px;
@@ -202,7 +194,7 @@ button:focus-visible {
     width: 65%;
     margin: auto;
     margin-top: 150px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     color: white;
 }
 
@@ -224,8 +216,9 @@ button:focus-visible {
 }
 
 #skills-1 > hr{
-    width: 300px;
+    width: 250px;
     color: gray;
+    margin-right: 50px;
 }
 
 .skills-card{
@@ -263,7 +256,7 @@ button:focus-visible {
 }
 
 .stats-head > hr{
-    width: 200px;
+    width: 250px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -271,4 +264,20 @@ button:focus-visible {
 .stats-body{
     margin: auto;
     text-align: center;
+}
+
+#github-trophy{
+    margin: 20px;
+}
+
+#github-top-langs{
+    margin: 20px;
+}
+
+#github-stats-card{
+    margin: 20px;
+}
+
+#github-streak-stats{
+    margin: 20px;
 }
