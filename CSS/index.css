@@ -33,6 +33,7 @@ body::-webkit-scrollbar-thumb{
     justify-content: flex-end;
     background-color: rgba(10, 25, 47, 0.85);
     backdrop-filter: blur(8px);
+    z-index: 1;
 }
 
 #nav-menu div{
@@ -52,7 +53,7 @@ body::-webkit-scrollbar-thumb{
     color: #64ffda;
 }
 
-button{
+#resume-link-2{
     width: 90px;
     height: 35px;
     border: 1px solid aqua;
@@ -69,7 +70,7 @@ button{
     color: aqua;
 }
 
-button:focus-visible {
+#resume-button-2:focus-visible {
     box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
     transition: box-shadow .2s;
 }
@@ -101,9 +102,10 @@ button:focus-visible {
 }
 
 #icon > i:hover{
-    color: rgb(83, 230, 227);
     transition: 0.3s;
+    transform: scale(.96);
 }
+
 
 .vertical {
     border-left: 2px solid white;
@@ -117,6 +119,9 @@ button:focus-visible {
     padding-bottom: 100px;
     margin-top: 150px;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 }
 
 #home  h1{
@@ -129,13 +134,39 @@ button:focus-visible {
     font-size: 20px;
 }
 
-#home > button{
-    margin-top: 40px;
-    width: 150px;
-    height: 50px;
-    font-size: 17px;
+.home-button{
+    margin: 20px;
+    margin-left: 0;
+    padding: 1em 3em;
+    border: none;
+    outline: none;
+    color: aqua;
+    background: #122d55;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
 }
 
+.home-button:focus-visible {
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow .2s;
+}
+
+.home-button:active {
+    transform: scale(.96);
+}
+
+.img-1{
+    width: 40%;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+}
+
+.img-1 > img{
+    width: 100%;
+}
 
 
 /* =-=-=-=-=-=-=-=-=-=-=-=--=-=-ABOUT=---=-=-=-==-=-=-=-=-=-=--=-=-=-=-==-*/
@@ -223,30 +254,35 @@ button:focus-visible {
 }
 
 .skills-card{
-    display: flex;
-    width: 90%;
+    width: 75%;
+    height: auto;
+    border: 1px solid white;
     margin: auto;
+    display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
 }
 
 .skills-card > div{
-    display: flex;
-    width: 45%;
+    width: 50%;
     border: 1px solid white;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 20px;
-    border-color: aqua;
-    color: #8892b0;
-    padding: 10px;
 }
 
-.skills-card > div > img{
-    width: 35px;
+.skills-card > div > div{
+    border: 1px solid white;
+    height: 120px;
+    display: flex;
+    padding: 20px;
 }
 
+.skills-card > div > div > div{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
 
+.skills-card img{
+    width: 60px;
+}
 .stats-head{
     display: flex;
     align-items: center;
@@ -304,4 +340,18 @@ button:focus-visible {
 
 .js-calendar-graph-svg{
     padding: 20px;
+}
+
+
+/* ==--=-=---=--=-=-=-==-=-=---==-=Contact-=-=-==-=-=-=-==-=-=-===-=-=-=- */
+#contact-section{
+    width: 65%;
+    border: 1px solid white;
+    margin: auto;
+    margin-top: 100px;
+    
+}
+
+#contact-section > div  span{
+    color: aqua;
 }
