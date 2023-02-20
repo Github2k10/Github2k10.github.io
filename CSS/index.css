@@ -342,6 +342,11 @@ body::-webkit-scrollbar-thumb{
     padding: 20px;
 }
 
+.stats-body-1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 
 /* ==--=-=---=--=-=-=-==-=-=---==-=Contact-=-=-==-=-=-=-==-=-=-===-=-=-=- */
 #contact-section{
