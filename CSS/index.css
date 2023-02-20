@@ -157,17 +157,6 @@ body::-webkit-scrollbar-thumb{
     transform: scale(.96);
 }
 
-.img-1{
-    width: 40%;
-    position: absolute;
-    bottom: 30px;
-    right: 0;
-}
-
-.img-1 > img{
-    width: 100%;
-}
-
 
 /* =-=-=-=-=-=-=-=-=-=-=-=--=-=-ABOUT=---=-=-=-==-=-=-=-=-=-=--=-=-=-=-==-*/
 
