@@ -1,0 +1,23 @@
+@media all and (min-width: 770px) and (max-width: 1179px){
+    nav ul{
+        margin-right: 10px;
+    }
+
+    label.logo{
+        line-height: 40px;
+        padding: 0 40px;
+    }
+
+    #icon{
+        display: none;
+    }
+
+    #home{
+        width: 90%;
+        float:none;
+        margin: auto;
+        padding-right: 0;
+    }
+
+    
+}

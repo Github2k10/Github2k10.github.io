@@ -3,8 +3,9 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: 0;
-    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins';
     text-decoration: none;
 }
 
@@ -12,7 +13,7 @@ body{
     background-color: #0a192f;
 }
 
-
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=Scroll Bar-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 body::-webkit-scrollbar{
     width:  8px;
     background: transparent;
@@ -23,37 +24,72 @@ body::-webkit-scrollbar-thumb{
     background: rgb(97, 96, 96);
 }
 
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=Navigation Bar-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 #nav-menu{
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: fixed !important;
+    top: 0px;
     width: 100%;
     height: 90px;
-    display: flex;
-    justify-content: flex-end;
     background-color: rgba(10, 25, 47, 0.85);
     backdrop-filter: blur(8px);
-    z-index: 1;
+    z-index: 10;
 }
 
-#nav-menu div{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+label.logo{
+    line-height: 80px;
+    padding: 0 30px 0 50px;
+}
+
+label.logo a img{
+    width:  auto;
+    height: 50px;
+    margin-top: 20px;
+    /* border: 1px solid white ; */
+}
+
+nav ul{
+    float:  right;
+    margin-right: 30px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #8892b0;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+nav ul li a span{
+    color: aqua;
+    margin-right: 3px;
     font-size: 14px;
 }
 
-#nav-menu div a{
-    color: #8892b0;
+.nav-link:hover{
+    color: aqua;
 }
 
-#nav-menu div a span{
-    color: #64ffda;
+.checkbtn{
+    color: aqua;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
 }
 
-#resume-link-2{
+#check{
+    display: none;
+}
+
+
+#resume-button-1{
     width: 90px;
     height: 35px;
     border: 1px solid aqua;
@@ -63,27 +99,16 @@ body::-webkit-scrollbar-thumb{
     outline: none;
     color: aqua;
     cursor: pointer;
+    transition: transform 250ms;
     transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
 }
 
-#resume-button-2{
-    color: aqua;
+
+#resume-button-1:hover {
+    transform: translateY(-3px);
 }
 
-#resume-button-2:focus-visible {
-    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
-    transition: box-shadow .2s;
-}
-
-.resume:active {
-    transform: scale(.96);
-}
-
-#home{
-    width: 70%;
-    margin: auto;
-}
-
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=Socail Icon-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 #icon{
     position: fixed;
     display: flex;
@@ -95,257 +120,266 @@ body::-webkit-scrollbar-thumb{
     bottom: 0;
 }
 
-#icon > i{
-    margin-bottom: 20px;
-    font-weight: 200;
+#icon > a > i{
     color: white;
+    margin-bottom: 18px;
+    transition: transform 250ms;
 }
 
-#icon > i:hover{
-    transition: 0.3s;
-    transform: scale(.96);
+#icon > a > i:hover{
+    color: aqua;
+    transition: .5s;
+    transform: translateY(-5px);
 }
-
 
 .vertical {
     border-left: 2px solid white;
     margin: auto;
     height: 100px;
 }
-/* =-=-=-=-=-=-=-=-=-=-=-=-==-=-=HOME-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=- */
 
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=Home Section-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 #home{
-    height: 100%;
-    padding-bottom: 100px;
-    margin-top: 150px;
+    width: 85%;
+    height: auto;
+    padding-right: 50px;
     color: white;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+    float: right;
+    font-size: 17px;
+    padding-top: 90px;
+    border: 1px solid white;
 }
 
-#home  h1{
-    font-size: 80px;
+.intro {
     line-height: 1.2;
+    margin-top: 80px;
+    margin-bottom: 90px;
 }
 
-#home p{
-    margin-top: 20px;
+.intro > h1{
+    font-size: calc(70px + 0.390625vw);
+    color: #ccd6f6;
+}
+
+.intro > h2{
+    font-size: calc(70px + 0.390625vw);
+    color: #8892b0;
+}
+
+.intro > p{
+    margin: 30px 0px;
     font-size: 20px;
 }
 
-.home-button{
-    margin: 20px;
-    margin-left: 0;
-    padding: 1em 3em;
-    border: none;
+.intro  button{
+    width: 140px;
+    height: 50px;
+    border: 1px solid aqua;
+    border-radius: 10px;
+    background-color: #0a192f;
+    box-sizing: border-box;
+    font-size: 19px;
     outline: none;
     color: aqua;
-    background: #122d55;
     cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
+    transition: transform 250ms;
+    transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
 }
 
-.home-button:focus-visible {
-    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
-    transition: box-shadow .2s;
+.intro > button:hover {
+    transform: translateY(-3px);
 }
 
-.home-button:active {
-    transform: scale(.96);
-}
-
-
-/* =-=-=-=-=-=-=-=-=-=-=-=--=-=-ABOUT=---=-=-=-==-=-=-=-=-=-=--=-=-=-=-==-*/
+/* =-=-=----=----=-=--=-=-ABOUT SECTION--=-=-=-=-=-=-=-=-=-=-=-=-= */
 
 #about{
-    /* border: 1px solid white; */
-    width: 65%;
+    width: 85%;
+    height: auto;
     margin: auto;
-    margin-top: 50px;
+    color: white;
+    float: right;
+    font-size: 17px;
+    padding-top: 90px;
+    border: 1px solid white;
 }
 
-#about-1{
+.heading{
     display: flex;
-    justify-content:first baseline;
+    justify-content: first baseline;
     align-items: center;
     color: #ccd6f6;
 }
 
-#about-1 > p{
+.heading > p{
     color: aqua;
     font-size: 19px;
     margin-right: 15px;
 }
 
-#about-1 > h2{
+.heading > h2{
     margin-right: 15px;
 }
 
-#about-1 > hr{
+.heading > hr{
     width: 300px;
     color: gray;
 }
 
-#user-detail-intro{
+.about-intro{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
     display: flex;
-}
-
-#user-detail-intro > p{
-    color: white;
-    width: 50%;
-    height: auto;
-    margin: 20px;
+    border: 1px solid white;
 }
 
 .home-img{
-    width: 300px;
-    height: 300px;
-    border: 1px solid aqua;
-    margin-top: 50px;
-    margin-left: 50px;
+    width: 40%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+
+.about-intro img{
+    width: 80%;
+    border-radius: 50%;
+}
+
+.about-self{
+    width: 60%;
+    padding: 20px;
 }
 
 
-/* =-=-=-=--=-=-=--=-=-=-=-=-=-=--=-=Skills=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-SKILLS SECITION-=-=-=-=-=-=-=-=-=--=-=- */
 
 #skills{
-    width: 65%;
+    width: 85%;
+    height: auto;
     margin: auto;
-    margin-top: 150px;
-    /* border: 1px solid white; */
     color: white;
+    float: right;
+    font-size: 17px;
+    padding-top: 90px;
+    border: 1px solid white;
 }
 
-#skills-1{
+#skills > p{
+    width: 80%;
+    margin: auto;
+}
+
+.lang{
+    height: auto;
+    width: 80%;
+    margin: auto;
+    border: 1px solid white;
+}
+
+.lang > div{
     display: flex;
-    justify-content : end;
-    align-items: center;
-    color: #ccd6f6;
-}
-
-#skills-1 > p{
-    color: aqua;
-    font-size: 19px;
-    margin-right: 15px;
-}
-
-#skills-1 > h2{
-    margin-right: 15px;
-}
-
-#skills-1 > hr{
-    width: 250px;
-    color: gray;
-    margin-right: 50px;
+    justify-content: space-around;
 }
 
 .skills-card{
-    width: 75%;
+    width: 150px;
+    height: 100px;
+    border: 1px solid white;
+    margin: 30px;
+}
+
+.tools{
+    width: auto;
     height: auto;
+    display: flex;
+    justify-content: space-around;
     border: 1px solid white;
+}
+
+.tools > div{
+    width: 150px;
+    height: 100px;
+    margin: 30px;
+    border: 1px solid white;
+}
+
+
+/* =-=-=-----=-=-=---=-=-=-=-=-=--=--=---PROJECT SECTION-=-=----=---=-=--==-=--= */
+
+#projects{
+    width: 85%;
+    height: auto;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.skills-card > div{
-    width: 50%;
+    color: white;
+    float: right;
+    font-size: 17px;
+    padding-top: 90px;
     border: 1px solid white;
 }
 
-.skills-card > div > div{
-    border: 1px solid white;
-    height: 120px;
-    display: flex;
-    padding: 20px;
-}
-
-.skills-card > div > div > div{
-    width: 100%;
-    display: flex;
-    position: relative;
-}
-
-.skills-card img{
-    width: 60px;
-}
-.stats-head{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-    color: #ccd6f6;
-    font-size: 22px;
-}
-
-.stats-head > hr{
-    width: 250px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.stats-body{
+.project-block{
+    height: 300px;
+    width: auto;
     margin: auto;
-    text-align: center;
-}
-
-#github-trophy{
-    margin: 20px;
-}
-
-#github-top-langs{
-    margin: 20px;
-}
-
-#github-stats-card{
-    margin: 20px;
-}
-
-#github-streak-stats{
-    margin: 20px;
-}
-
-.calendar{
-    font-size: 15px;
-    border: 1px solid aqua;
-    margin-top: 20px;
-}
-
-.contrib-number{
-    color:rgb(83, 230, 227);
-}
-
-:root{
-    --color-calendar-graph-day-bg:  #00000;
-}
-
-.contrib-column{
-    border-top: 1px solid aqua;
-    border-left: 1px solid aqua;
-}
-
-.js-calendar-graph-svg{
-    padding: 20px;
-}
-
-.stats-body-1{
     display: flex;
     justify-content: space-evenly;
+    border: 1px solid white ;
 }
 
-
-/* ==--=-=---=--=-=-=-==-=-=---==-=Contact-=-=-==-=-=-=-==-=-=-===-=-=-=- */
-#contact-section{
-    width: 65%;
+.project-card{
+    height: 200px;
+    width: 200px;
+    margin: 30px;
     border: 1px solid white;
-    margin: auto;
-    margin-top: 100px;
-    
 }
 
-#contact-section > div  span{
-    color: aqua;
+
+/* =--=--=--=-=-=-=----=--=-=-=-GITHUB SECITION=-=-=---=--=-=-=--=-=- */
+
+#github{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    color: white;
+    float: right;
+    font-size: 17px;
+    padding-top: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid white;
+}
+
+#github h1{
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+}
+
+#github > div{
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-CONTACT SECTION-=-=-=-=-=-=-=-=--=-=-=- */
+
+#contact{
+    width: 85%;
+    height: auto;
+    margin: auto;
+    color: white;
+    float: right;
+    font-size: 17px;
+    padding-top: 90px;
+    border: 1px solid white;
+}
+
+.contact {
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    border: 1px solid white;
 }

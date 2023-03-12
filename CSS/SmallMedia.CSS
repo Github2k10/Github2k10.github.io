@@ -1,0 +1,82 @@
+@media all and (min-width: 0px) and (max-width: 769px){
+    label.logo{
+        line-height: 40px;
+        padding: 0 50px;
+    }
+    
+    label.logo a img{
+        width:  auto;
+        height: 40px;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 17px;
+
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    #icon{
+        display: none;
+    }
+
+    #home{
+        width: 95%;
+        float:none;
+        margin: auto;
+        padding-right: 0;
+    }
+
+    /*  */
+
+    .intro {
+        line-height: 1.2;
+        margin-top: 40px;
+        margin-bottom: 130px;
+        font-size: 3vw;
+    }
+    
+    .intro > h1{
+        font-size: 4em;
+        color: #ccd6f6;
+    }
+    
+    .intro > h2{
+        font-size: 4em;
+        color: #8892b0;
+    }
+    
+    .intro > p{
+        margin: 30px 0px;
+        font-size: 1.2em;
+    }
+
+    .intro  button{
+        width: 90px;
+        height: 35px;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+}
