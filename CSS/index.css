@@ -186,7 +186,7 @@ nav ul li a span{
     transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
 }
 
-.intro > button:hover {
+.intro  button:hover {
     transform: translateY(-3px);
 }
 
