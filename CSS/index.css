@@ -147,7 +147,7 @@ nav ul li a span{
     float: right;
     font-size: 17px;
     padding-top: 90px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 .intro {
@@ -200,7 +200,7 @@ nav ul li a span{
     float: right;
     font-size: 17px;
     padding-top: 90px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 .heading{
@@ -226,11 +226,11 @@ nav ul li a span{
 }
 
 .about-intro{
-    width: 80%;
-    margin: auto;
+    width: 90%;
     margin-top: 20px;
-    display: flex;
-    border: 1px solid white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* border: 1px solid white; */
 }
 
 .home-img{
@@ -240,17 +240,38 @@ nav ul li a span{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 .about-intro img{
-    width: 80%;
+    width: 300px;
     border-radius: 50%;
 }
 
 .about-self{
-    width: 60%;
     padding: 20px;
+    font-size: 17px;
+}
+
+.skill-list{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 120px));
+    font-size: 14px;
+    color: #8892b0;
+}
+
+.skill-list li::before{
+    content: " ▹ ";
+    color: #64ffda;
+    font-size: 14px;
+}
+
+.about-self p{
+    color: #8892b0;
+}
+
+.about-self span{
+    color: aqua;
 }
 
 
@@ -305,7 +326,6 @@ nav ul li a span{
     margin: 30px;
     border: 1px solid white;
 }
-
 
 /* =-=-=-----=-=-=---=-=-=-=-=-=--=--=---PROJECT SECTION-=-=----=---=-=--==-=--= */
 
