@@ -281,47 +281,105 @@ nav ul li a span{
     float: right;
     font-size: 17px;
     padding-top: 90px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
-#skills > p{
-    width: 80%;
-    margin: auto;
+#skills > :first-child{
+    margin-bottom: 30px;
 }
 
-.lang{
+.tech{
+    color: #8892b0;
+    margin-left: 5%;
+    text-decoration:underline;
+}
+
+.language-list{
     height: auto;
-    width: 80%;
+    width: 70%;
+    padding: 50px 50px 0px 50px;
+    display: grid;
     margin: auto;
-    border: 1px solid white;
+    grid-template-columns: repeat(3, 1fr);
+    /* border: 1px solid white;    */
 }
 
-.lang > div{
-    display: flex;
-    justify-content: space-around;
+
+.skills-card {
+    height: 70%;
+    -ms-flex-preferred-size: calc(33.33333% - 10px);
+    flex-basis: calc(33.33333% - 10px);
+    margin: 0 15px 30px;
+    overflow: hidden;
+    border-radius: 28px;
 }
 
-.skills-card{
-    width: 150px;
-    height: 100px;
-    border: 1px solid white;
-    margin: 30px;
+.ag-course-item_link {
+    display: block;
+    padding: 50px 20px;
+    background-color: #121212;
+    overflow: hidden;
+    position: relative;
 }
 
-.tools{
-    width: auto;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-    border: 1px solid white;
+.ag-course-item_link:hover{
+    text-decoration: none;
+    color: #fff;
 }
 
-.tools > div{
-    width: 150px;
-    height: 100px;
-    margin: 30px;
-    border: 1px solid white;
+.ag-course-item_bg:hover{
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10); 
+    transform: scale(10);
+    transition: 1s;
 }
+
+.ag-course-item_title {
+    min-height: 50px;
+    margin: 0 0 25px;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+}
+
+.skills-card-name {
+
+    font-size: 20px;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+}
+
+.ag-course-item_bg {
+    height: 128px;
+    width: 128px;
+    background-color: #f9b234;
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+    border-radius: 50%;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.language-list > :nth-child(2n) .ag-course-item_bg {
+    background-color: #3ecd5e;
+}
+.language-list > :nth-child(3n) .ag-course-item_bg {
+    background-color: #e44002;
+}
+.language-list > :nth-child(4n) .ag-course-item_bg {
+    background-color: #952aff;
+}
+.language-list > :nth-child(5n) .ag-course-item_bg {
+    background-color: #cd3e94;
+}
+.language-list > :nth-child(6n) .ag-course-item_bg {
+    background-color: #4c49ea
+}
+
 
 /* =-=-=-----=-=-=---=-=-=-=-=-=--=--=---PROJECT SECTION-=-=----=---=-=--==-=--= */
 

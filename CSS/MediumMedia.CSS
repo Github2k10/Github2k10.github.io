@@ -34,4 +34,25 @@
     .about-self p{
         font-size: 14px;
     }
+
+    #skills{
+        width: 100%;
+        padding: 0;
+    }
+
+    .language-list{
+        height: auto;
+        width: 90%;
+    }
+}
+
+
+@media only screen and (max-width: 979px) {
+    .skills-card {
+        -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
+    }
+    .ag-course-item_title {
+        font-size: 24px;
+    }
 }

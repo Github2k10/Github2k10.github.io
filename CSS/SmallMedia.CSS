@@ -116,7 +116,47 @@
         width: 220px;
     }
 
-    .skill-list{
-        font-size: 12px;
+    #skills{
+        width: 95%;
+        float: none;
+        padding-top: 50px;
+    }
+
+    .language-list{
+        height: auto;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media all and (min-width: 0px) and (max-width: 550px){
+    .language-list{
+        height: auto;
+        width: 100%;
+        margin-top: 30px;
+        padding: 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ag-course-item_title {
+        margin: 0 0 20px;
+    }
+
+    .skills-card-img{
+        width: 40px;
+    }
+
+    .ag-course-item_link{
+        padding: 25px 20px;
+    }
+
+    .ag-course-item_bg{
+        height: 115px;
+        width: 115px;
+    }
+
+    .tech > h2{
+        font-size: 17px;
     }
 }
