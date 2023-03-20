@@ -128,6 +128,39 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
+    #projects{
+        width: 95%;
+        float: none;
+        padding-top: 10px;
+    }
+
+    .project-block{
+        width: 90%;
+    }
+
+    .project-card {
+        padding: 25px;
+        flex-direction: column;
+        margin-top: 70px;
+    }
+
+    .project-img {
+        min-width: 90%;
+        transform: translate(0, -50px);
+    }
+
+    .project-title {
+        font-size: 17px;
+      }
+
+    .project-info p {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .project-info a{
+        font-size: 13px;
+    }
 }
 
 @media all and (min-width: 0px) and (max-width: 550px){
@@ -159,4 +192,6 @@
     .tech > h2{
         font-size: 17px;
     }
+    
 }
+
