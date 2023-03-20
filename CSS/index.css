@@ -492,24 +492,85 @@ nav ul li a span{
     margin: auto;
     color: white;
     float: right;
-    font-size: 17px;
     padding-top: 90px;
+    /* border: 1px solid white; */
+}
+
+.heading{
     display: flex;
-    justify-content: space-evenly;
-    border: 1px solid white;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-left: -10px;
 }
 
-#github h1{
-    font-size: 20px;
-    text-align: center;
+
+#github > :nth-child(2) {
+    width: 85%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
 }
 
-#github > div{
-    width: 200px;
-    height: 200px;
-    border: 1px solid white;
+.react-activity-calendar{
+    width: 80%;
+    margin: auto;
+    flex-wrap: nowrap;
+    margin-top: 50px;
 }
+
+#github-trophy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#github-trophy img{
+    width: 100%;
+}
+
+#github-top-langs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#github-top-langs img{
+    width: 100%;
+}
+
+#github-stats-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#github-stats-card img{
+    width: 100%;
+}
+
+#github-streak-stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#github-streak-stats img{
+    width: 100%;
+}
+
+.calendar{
+    border: none;
+}
+
+.contrib-column {
+    display: none;
+}
+
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-CONTACT SECTION-=-=-=-=-=-=-=-=--=-=-=- */
 
@@ -521,12 +582,5 @@ nav ul li a span{
     float: right;
     font-size: 17px;
     padding-top: 90px;
-    border: 1px solid white;
-}
-
-.contact {
-    width: 80%;
-    height: 200px;
-    margin: auto;
     border: 1px solid white;
 }

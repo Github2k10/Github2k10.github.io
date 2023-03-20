@@ -161,6 +161,42 @@
     .project-info a{
         font-size: 13px;
     }
+
+    #github{
+        width: 100%;
+        float: none;
+        padding-top: 50px;
+    }
+
+    #github .heading h2{
+        font-size: 17px;
+    }
+
+    #github .heading hr{
+        width: 80px;
+    }
+
+    #github-trophy{
+        width: 90%;
+    }
+
+    #github-top-langs img{
+        width: 90%;
+    }
+    
+    #github-stats-stats img{
+        width: 80%;
+        margin: auto;
+    }
+    
+    #github-stats-card img{
+        width: 90%;
+        margin: auto;
+    }
+
+    .react-activity-calendar{
+        width: 90%;
+    }
 }
 
 @media all and (min-width: 0px) and (max-width: 550px){

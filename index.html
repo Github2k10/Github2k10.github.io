@@ -534,14 +534,36 @@
         <!-- =-=--=--=--==-=-=--=-=--=-=-=--=-=-GITHUB SECTIONS=-=-----=-----=-------=-=---=- -->
         <section>
             <div id="github">
-                <div>
-                    <h1><hr>GITHUB STATS <hr></h1>
+                <div class="heading" >
+                    <hr>
+                    <h2 style="margin-left: 15px;" >GITHUB STATS</h2>
+                    <hr>
                 </div>
 
-                <div class="react-activity-calendar"></div>
-                <div id="github-streak-stats"></div>
-                <div id="github-top-langs"></div>
-                <div id="github-stats-card"></div>
+                <div>
+                    <div id="github-top-langs">
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Github2k10&layout=compact&langs_count=10&theme=algolia&hide_border=true" alt="">
+                    </div>
+
+                    <div id="github-trophy">
+                        <img src="https://github-profile-trophy.vercel.app/?username=github2k10&theme=juicyfresh&column=4&no-bg=true&no-frame=true" alt="">
+                    </div>
+
+                    <div id="github-stats-card">
+                        <img src="https://github-readme-stats.vercel.app/api?username=Github2k10&show_icons=true&theme=algolia&hide_border=true" alt="">
+                    </div>
+    
+                    <div id="github-streak-stats">
+                        <img src="https://github-readme-streak-stats.herokuapp.com?user=Github2k10&theme=algolia&hide_border=true" alt="">
+                    </div>
+                </div>
+
+                <div class="react-activity-calendar">
+                    <div class="calendar">
+                        <!-- Loading stuff -->
+                        Loading the data just for you.
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -567,3 +589,12 @@
 <script src="https://kit.fontawesome.com/1bffa3735e.js"
     crossorigin="anonymous"></script>
 <script src="./Script/index.js"></script>
+
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+></script>
+
+<script>
+    GitHubCalendar(".calendar", "Github2k10");
+    GitHubCalendar(".calendar", "Github2k10", { responsive: true });
+</script>
