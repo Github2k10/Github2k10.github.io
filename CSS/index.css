@@ -541,6 +541,7 @@ nav ul li a span{
 
 #github-top-langs img{
     width: 100%;
+    border-radius: 10px;
 }
 
 #github-stats-card{
@@ -551,6 +552,7 @@ nav ul li a span{
 
 #github-stats-card img{
     width: 100%;
+    border-radius: 10px;
 }
 
 #github-streak-stats{
@@ -561,6 +563,7 @@ nav ul li a span{
 
 #github-streak-stats img{
     width: 100%;
+    border-radius: 10px;
 }
 
 .calendar{
