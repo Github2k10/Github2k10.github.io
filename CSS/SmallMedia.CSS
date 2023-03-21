@@ -197,6 +197,19 @@
     .react-activity-calendar{
         width: 90%;
     }
+
+    #contact{
+        width: 100%;
+        float: none;
+        padding-top: 0px;
+        margin-top: -50px;
+    }
+
+    #contact  h2{
+        font-size: 13px;
+        padding: 0;
+        margin: 0;
+    }
 }
 
 @media all and (min-width: 0px) and (max-width: 550px){

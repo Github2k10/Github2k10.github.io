@@ -121,19 +121,19 @@ nav ul li a span{
 }
 
 #icon > a > i{
-    color: white;
+    color: #8892b0;
     margin-bottom: 18px;
     transition: transform 250ms;
 }
 
 #icon > a > i:hover{
     color: aqua;
-    transition: .5s;
+    transition: .2s;
     transform: translateY(-5px);
 }
 
 .vertical {
-    border-left: 2px solid white;
+    border-left: 2px solid #8892b0;
     margin: auto;
     height: 100px;
 }
@@ -290,8 +290,14 @@ nav ul li a span{
 
 .tech{
     color: #8892b0;
+    width: fit-content;
     margin-left: 5%;
     text-decoration:underline;
+}
+
+.tech :hover{
+    color: aqua;
+    text-decoration-color: aqua;
 }
 
 .language-list{
@@ -496,7 +502,7 @@ nav ul li a span{
     /* border: 1px solid white; */
 }
 
-.heading{
+#github .heading{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -563,7 +569,7 @@ nav ul li a span{
 
 #github-streak-stats img{
     width: 100%;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .calendar{
@@ -585,5 +591,15 @@ nav ul li a span{
     float: right;
     font-size: 17px;
     padding-top: 90px;
-    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    /* border: 1px solid white; */
+}
+
+#contact h2{
+    color: #8892b0;
+    margin: auto;
+    text-align: center;
 }

@@ -71,6 +71,13 @@
         width: 200px;
     }
 
+    #contact{
+        width: 90%;
+        float: none;
+        margin: auto;
+        padding: 0%;
+    }
+
 }
 
 
