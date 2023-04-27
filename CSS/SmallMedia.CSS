@@ -13,7 +13,7 @@
         display: block;
     }
 
-    ul{
+    nav ul{
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -199,16 +199,64 @@
     }
 
     #contact{
-        width: 100%;
+        width: 95%;
         float: none;
-        padding-top: 0px;
-        margin-top: -50px;
+        padding-top: 10px;
     }
 
-    #contact  h2{
-        font-size: 13px;
-        padding: 0;
-        margin: 0;
+    #contact > h1{
+        font-size: 30px;
+        text-align: center;
+        margin: 10px;
+        padding: 20px 0px;
+    }
+}
+
+
+@media (max-width: 769px){
+    .container{
+        width: 100%;
+        max-width: 88%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container > .contactForm{
+        width: 100%;
+        height: auto;
+    }
+
+    .container > .contactInfo{
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+    }
+
+    .container > .contactInfo > ul.sci{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 550px){
+    .container .contactForm{
+        padding: 25px;
+    }
+
+    .container .contactInfo{
+        padding: 25px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container .contactInfo > ul.sci{
+        margin-top: 40px;
+    }
+
+    .container .contactForm .formbox .inputbox.w50{
+        width: 100%;
     }
 }
 
@@ -241,6 +289,7 @@
     .tech > h2{
         font-size: 17px;
     }
-    
 }
+
+
 

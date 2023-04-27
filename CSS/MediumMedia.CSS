@@ -3,9 +3,13 @@
         margin-right: 10px;
     }
 
+    label.logo a img{
+        height: 45px;
+    }
+
     label.logo{
         line-height: 40px;
-        padding: 0 40px;
+        padding: 0 30px;
     }
 
     #icon{
@@ -78,6 +82,13 @@
         padding: 0%;
     }
 
+    .container{
+        max-width: 90%;
+    }
+
+    .container .contactInfo{
+        height: 90%;
+    }
 }
 
 
@@ -121,4 +132,33 @@
         color: white;
         font-size: 13px;
       }
+}
+
+
+@media (max-width: 900px){
+    .container{
+        width: 90%;
+        min-width: auto;
+        margin: auto;
+        margin-bottom: 50px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    }
+
+    .container .contactInfo{
+        top: 0;
+        height: 550px;
+        width: 300px;
+        position: relative;
+        box-shadow: none;
+    }
+
+    .container .contactForm{
+        position: relative;
+        width: calc(100% - 300px);
+        padding-left: 0;
+        margin-left: 0;
+        padding: 40px;
+        height: 550px;
+        box-shadow: none;
+    }
 }
