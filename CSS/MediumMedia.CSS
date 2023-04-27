@@ -150,6 +150,8 @@
         width: 300px;
         position: relative;
         box-shadow: none;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
     }
 
     .container .contactForm{
@@ -160,5 +162,7 @@
         padding: 40px;
         height: 550px;
         box-shadow: none;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
     }
 }

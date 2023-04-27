@@ -623,6 +623,7 @@ nav ul li a span{
     justify-content: center;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 10px;
     box-shadow: 0 20px 25px 25px rgba(0, 0, 0, 0.15);
 }
 
@@ -674,12 +675,9 @@ nav ul li a span{
 }
 
 .container .contactInfo ul.sci li a{
+    font-size: 30px;
+    color: aliceblue;
     text-decoration: none;
-}
-
-.container .contactInfo ul.sci a img{
-    width: 30px;
-    filter: invert(1);
 }
 
 
@@ -691,6 +689,7 @@ nav ul li a span{
     width: calc(100% - 150px);
     height: 100%;
     background: #fff;
+    border-radius: 10px;
     box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
 }
 

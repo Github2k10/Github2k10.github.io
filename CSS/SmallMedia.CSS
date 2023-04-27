@@ -224,12 +224,18 @@
     .container > .contactForm{
         width: 100%;
         height: auto;
+        border-radius: 0px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
     }
 
     .container > .contactInfo{
         width: 100%;
         height: auto;
         flex-direction: row;
+        border-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 
     .container > .contactInfo > ul.sci{
