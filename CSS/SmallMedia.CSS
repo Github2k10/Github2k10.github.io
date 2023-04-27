@@ -247,6 +247,9 @@
 }
 
 @media (max-width: 550px){
+    #contact h1{
+        font-size: 25px;
+    }
     .container .contactForm{
         padding: 25px;
     }
