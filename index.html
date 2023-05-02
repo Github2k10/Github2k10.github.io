@@ -1,756 +1,1269 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ankit</title>
-        <link rel="icon" href="/data/logo3.png">
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-            />
-        <script src="https://kit.fontawesome.com/a076d05399.js"
-            crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./CSS/index.css">
-        <link rel="stylesheet" href="./CSS/MediumMedia.CSS">
-        <link rel="stylesheet" href="./CSS/SmallMedia.CSS">
-    </head>
 
-    <body>
-        <!-- //=-=---=-=--=--=---=-=-=-=--=NAV-BAR-=-=-=-=-=-=-=-=-=-=-=-=-=-=// -->
-        <header id="nav-menu">
-            <nav>
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label>
-                <label class="logo"><a href="/"> <img src="./data/logo2.png">
-                    </a></label>
-                <ul>
-                    <li>
-                        <a href="#home" class="nav-link home"><span>01.</span>
-                            Home</a>
-                    </li>
-                    <li>
-                        <a href="#about" class="nav-link about"><span>02.</span>
-                            About</a>
-                    </li>
-                    <li>
-                        <a href="#skills" class="nav-link skills"><span>03.</span>
-                            Skills</a>
-                    </li>
-                    <li>
-                        <a href="#projects" class="nav-link projects"><span>04.</span>
-                            Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="nav-link contact"><span>05.</span>
-                            Contact</a>
-                    </li>
-                    <li>
-                        <a href="./data/Ankit-Kumar-Resume.pdf"
-                            id="resume-link-1" class="nav-link resume" download>
-                            <button id="resume-button-1">Resume</button>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kunal Mehra</title>
+  <!--??--------------------------------------------- <Favicon> ----------------------------------------------->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!--??--------------------------------------------- <CSS FILES> ----------------------------------------------->
+  <link rel="stylesheet" href="CSS/index.css" defer />
+  <link rel="stylesheet" href="CSS/Navbar.css" defer>
+  <link rel="stylesheet" href="CSS/buttons.css" defer />
+  <link rel="stylesheet" href="CSS/Github.css" defer />
+  <link rel="stylesheet" href="CSS/Projects.css" defer />
+  <link rel="stylesheet" href="CSS/Techstack.css" defer />
+  <link rel="stylesheet" href="CSS/Portfolio.css" defer>
+  <link rel="stylesheet" href="CSS/conncet.css" defer />
+  <link rel="stylesheet" href="CSS/MediaQSmall.css" defer>
+  <link rel="stylesheet" href="CSS/MediaQMedium.css" defer>
+  <link rel="stylesheet" href="CSS/githubcalendar.css" defer>
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" defer />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" defer />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
 
-        <!-- //=-=---=-=--=--=---=-=-=-=--=Socail Media Icon-=-=-=-=-=-=-=-=-=-=-=-=-=-=// -->
-        <section id="icon">
-            <a href="https://github.com/Github2k10/" target="_blank">
-                <i id="git" class="fa-brands fa-github"></i>
+<body>
+<!--?--------------------------------------------- <Scripts> ----------------------------------------------->
+    <div id="scripties">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"
+      defer></script>
+    <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" defer></script> -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js" defer>
+    </script>
+    <script src="JS/index.js" defer></script>
+    <script src="JS/Navbar.js" defer></script>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js" defer></script>
+    <script src="https://tarptaeya.github.io/repo-card/repo-card.js" defer></script>
+    </div>
+    <!--?--------------------------------------------- <Essentials> ----------------------------------------------->
+    <div class="progress-bar">
+      <div class="filled"></div>
+    </div>
+<div id="loader">    
+  <div class="spinner-grow text-primary" role="status">
+  </div>
+  <label>Loading...</label>
+</div>
+    <button id="topbutton" title="Go to top">
+      <img width="70%" style="filter: invert(); rotate: 180deg;" src="Images/Icons/download.svg" alt="">
+    </button>
+<!--!--------------------------------------------- Header ----------------------------------------------->
+    <header id="nav-menu">
+      <nav id="stickynav">
+        <div id="NavBrand"> <a id="brandbg" class="navbar-brand" href="#"> 🔵 Kunal </a></div>
+        <div id="NavlinkParent">
+          <div class="nav-item buttonunderline" data-navclose><a class="nav-link home " href="#home">Home</a></div>
+          <div class="nav-item buttonunderline" data-navclose><a class="nav-link about " href="#about">About</a></div>
+          <div class="nav-item buttonunderline" data-navclose><a class="nav-link projects" href="#projects">Projects</a></div>
+          <div class="nav-item buttonunderline" data-navclose><a class="nav-link github " href="#github">Github</a></div>
+          <div class="nav-item buttonunderline" data-navclose><a class="nav-link skills " href="#skills">Skills</a></div>
+          <div class="nav-item buttonunderline" data-navclose><a class="nav-link contact " href="#contact">Contact</a>
+          </div>
+        </div>
+        <div id="MyAccBtn" class="flex">
+          <button id="resume-button-1" class="nav-link resume buttonslide" onclick="resume()">
+            <a href="Kunal-Mehra-Resume.pdf" id="resume-link-1"style="color:white"  download="Kunal-Mehra-Resume.pdf">
+              Resume
             </a>
+            
+          </button>
+        
+          <a href="https://www.linkedin.com/in/kunal-mehra-thelifeofcoder/">
+            <img loading="lazy" width="40px" id="firstlinks" src="Images/Icons/linkedstroke2.png" alt="" /></a>
+          <button id="navclickbtn" data-navclose>
+            <svg data-navclose xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 96 960 960" width="30">
+              <path data-navclose d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+<!--!--------------------------------------------- Main Body ----------------------------------------------->
+   <main>
+    <!--todo--------------------------------------------- <Home Section> ----------------------------------------------->
 
-            <a href="https://www.linkedin.com/in/ankit-kumar-2k21/" target="_blank">
-                <i id="linkin" class="fa-brands fa-linkedin-in"></i>
-            </a>
+    <section id="home" class="FirstView">
+      <div class="Introbox" data-aos="fade-in">
+        <h1 id="firstviewhello">Hello,</h1>
+        <h1 id="firstviewkunal">I am Kunal Mehra</h1>
+        <h2 id="intro">Full Stack Web Developer📌</h2>
+        <p>
+          I am currently learning at Masai School.<br />
+          Welcome to my portfolio.
+        </p>
+        <br>
 
-            <a href="https://twitter.com/AnkitKu1777768" target="_blank">
-                <i id="twitter" class="fa-brands fa-twitter"></i>
-            </a>
-            <div class="vertical"></div>
-        </section>
+        <div id="Letsexploreparent">
+          <a href="#about"><button id="LetsExplore" class="buttonslide">Lets Explore</button></a>
 
-        <!-- //=-=---=-=--=--=---=-=-=-=--=HOME SECTION-=-=-=-=-=-=-=-=-=-=-=-=-=-=// -->
-        <section id="home">
-            <div id="user-detail-name" class="intro">
-                <h1>Hi,</h1>
-                <h1>I'm Ankit</h1>
-                <h2>Web Developer</h2>
-                <p>Let's create something for the World!</p>
+            <button onclick="resume()"  id="resume-button-2" class="buttonslide">
+              <a id="resume-link-2" style="color:white" href="Kunal-Mehra-Resume.pdf" target="_blank" download="Kunal-Mehra-Resume.pdf">
+              CV </a>
+              <img width="30%" style="filter: invert();" src="Images/Icons/download.svg" alt=""> </button><br>
+        </div>
 
-                <a href="./data/Ankit-Kumar-Resume.pdf" id="resume-link-2"
-                    download>
-                    <button id="resume-button-2">Resume</button>
+
+      </div>
+
+      <div data-aos="fade-in">
+        <img loading="lazy" id="firstviewimg" src="Images/codergif.gif" alt="" />
+      </div>
+    </section>
+
+    <!--todo--------------------------------------------- <Portfolio Section> ----------------------------------------------->
+
+    <section id="about" class="about section">
+      <h1 id="Aboutroll" class="SectionHeads">About Me <label id="Aboutrolldim"> >
+          About Me ></label></h1>
+      <br />
+      <div>
+        <div class="portfolioimage" data-aos="fade-up">
+          <img loading="lazy" id="kunalimg" class="home-img" src="Images/pfp2.png" alt="" />
+        </div>
+        <div class="portfolio-content" data-aos="fade-up">
+          <h1 id="user-detail-name" class="profileheading">Hi! I am <label id="KunalMehraName">Kunal Mehra</label></h1>
+          <p id="user-detail-intro">
+            <label style="color: var(--themeblue)">I</label>
+            am a Web Developer who knows how to design and build Web Apps that are
+            aligned with your business image and goals. <br>
+            Having the capability of writing production-ready codes with unique logic & conciseness.
+            My Best skills in HTML,CSS, JavaScript, NodeJS, Express.js. 
+            Looking forward to collaborate on more projects.
+          </p>
+          <br>
+          <div>
+            <a href="Kunal-Mehra-Resume.pdf" download>
+              <button onclick="resume()" id="downloadresumeport" class="buttonslide">
+                Download My Resume
+                <img width="10%" style="filter: invert()" src="Images/Icons/download.svg" alt="" />
+              </button>
+
+              <div>
+                <br />
+                <a style="color: var(--themeblue)">Contact Me Here!</a>
+                <br />
+                <a>
+                  I assure you the quickest response you might recieve from me would
+                  be on an email - not a social media DM.
                 </a>
+                <br />
+                <div id="logos">
+                  <div>
+                    <a id="contact-linkedin" href="https://www.linkedin.com/in/kunal-mehra-thelifeofcoder/"
+                      target="_blank"><img loading="lazy" src="Images/social/linked.svg" alt="" /></a>
+                  </div>
+                  <div>
+                    <a id="contact-github" href="https://github.com/KunalMehra075" id="contact-github"
+                      target="_blank"><img loading="lazy" src="Images/social/github.svg" alt="" /></a>
+                  </div>
+                  <div>
+                    <a href="https://twitter.com/KunalMe96052494" target="_blank"><img loading="lazy"
+                        src="Images/social/twitter.svg" alt="" /></a>
+                  </div>
+                  <div>
+                    <a id="contact-linkedin" href="https://www.linkedin.com/in/kunal-mehra-thelifeofcoder/"
+                      target="_blank"><img loading="lazy" src="Images/social/fb.svg" alt="" /></a>
+                  </div>
+                </div>
+
+                <a style="color: var(--themeblue)">Email: </a><a id="contact-email">kunalmehra240304@gmail.com</a>
+                <br />
+                <a style="color: var(--themeblue)">Contact: </a><a id="contact-phone">+91 9329037858 </a>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--todo--------------------------------------------- <Projects Section> ----------------------------------------------->
+
+      <section id="projects">
+      <h1 id="projectHead" class="SectionHeads">Projects <label id="Aboutrolldim"> > Projects > </label></h1>
+      <br />
+      <div class="AllProjects">
+        <!-- !Stylezilla -->
+        <div class="project-card" data-aos="fade-up">
+          <div class="OneProject stylezillabg">
+            <h1 class="projectcount">01</h1>
+            <div class="OPRBGB">
+              <div class="project-title OnePRhead">StyleZilla.com</div>
+              <div class="project-tech-stack OnePRdetails">
+                <p class="project-description">
+                  An Online Fashion Store for shopping clothes and latest brands.
+                </p>
+
+                <button type="button" class="ClickModalBtn buttonslide" data-bs-toggle="modal"
+                  data-bs-target="#StyleZillaModal" data-stylezilla>
+                  Click here to know more
+                  <img loading="lazy" class="downsee" src="Images\Icons\downsee.gif" alt="" />
+                </button>
+                <br />
+                <div class="projlinks">
+                  <a class="project-deployed-link" href="https://stylezillajs201.netlify.app/" target="_blank">
+                    <button class="downseeG">
+                      <img loading="lazy" class="gitplay sitebutton" src="Images/Icons/opensite.svg" alt="" />
+                      Site
+                    </button></a>
+                  <a class="project-github-link" href="https://github.com/SagarN21/urbane-look-6820"
+                    target="_blank"><button class="downseeG">
+                      <img loading="lazy" class="gitplay" src="Images/Icons/GitHub.png" alt="" />
+                      Github
+                    </button></a>
+                  <a href="https://youtu.be/SkV6oL-GZm8" target="_blank">
+                    <button class="downseeG">
+                      <img loading="lazy" class="gitplay" src="Images/Icons/play.png" alt="" />
+                      Live Video
+                    </button></a>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+         <!-- !AceLegalServices -->
+         <div class="project-card" data-aos="fade-up">
+          <div class="OneProject acelegalservice">
+            <h1 class="projectcount">03</h1>
+            <div class="OPRBGB">
+              <div class="project-title OnePRhead">Ace Legal Services</div>
+              <div class="project-tech-stack OnePRdetails">
+                <p class="project-description">
+                  An Orignal Web Services for Legal Booking Appointment System.
+                </p>
 
-        <!-- =-=-=--=--=--=--=--=-=--=-=-ABOUT SECTION-=-=-=-=-=-=-=-=-=---=--=-=-=-= -->
-        <section>
-            <div id="about" class="about section">
-                <div class="heading">
-                    <p>02.</p>
-                    <h2>ABOUT ME</h2>
-                    <hr>
+                <button type="button" class="ClickModalBtn buttonslide" data-bs-toggle="modal"
+                  data-bs-target="#acelegalModal" data-acelegal>
+                  Click here to know more
+                  <img loading="lazy" class="downsee" src="Images\Icons\downsee.gif" alt="" />
+                </button>
+                <br />
+                <div class="projlinks">
+                  <a class="project-deployed-link" href="https://acelegalservices.vercel.app/" target="_blank"><button
+                      class="downseeG">
+                      <img loading="lazy" class="gitplay sitebutton" src="Images/Icons/opensite.svg" alt="" />
+                      Site
+                    </button>
+                  </a>
+                  <a class="project-github-link" href="https://github.com/Mr-Soni532/young-zinc-6102"
+                    target="_blank"><button class="downseeG">
+                      <img loading="lazy" class="gitplay" src="Images/Icons/GitHub.png" alt="" />
+                      Github
+                    </button>
+                  </a>
+                  <a href="https://drive.google.com/file/d/16kbipuM3rlgz-ymfc7ibTMghp0BESRfE/view?usp=share_link" target="_blank"><button class="downseeG">
+                      <img loading="lazy" class="gitplay" src="Images/Icons/play.png" alt="" />
+                      Live Video
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- !Orangefry -->
+        <div class="project-card" data-aos="fade-up">
+          <div class="OneProject orangefrybg">
+            <h1 class="projectcount">02</h1>
+            <div class="OPRBGB">
+              <div class="project-title OnePRhead">OrangeFry.com</div>
+              <div class="project-tech-stack OnePRdetails">
+                <p class="project-description">
+                  Orangefry is an Indian online marketplace for furniture and home
+                  décor.
+                </p>
+
+                <button type="button" class="ClickModalBtn buttonslide" data-bs-toggle="modal"
+                  data-bs-target="#OrangeFryModal" data-orangefry>
+                  Click here to know more
+                  <img loading="lazy" class="downsee" src="Images\Icons\downsee.gif" alt="" />
+                </button>
+                <br />
+                <div class="projlinks">
+                  <a class="project-deployed-link" href="https://orangefry.netlify.app/" target="_blank">
+                    <button class="downseeG">
+                      <img loading="lazy" class="gitplay sitebutton" src="Images/Icons/opensite.svg" alt="" />
+                      Site
+                    </button></a>
+                  <a class="project-github-link" href="https://github.com/KunalMehra075/tame-ink-7589"
+                    target="_blank"><button class="downseeG">
+                      <img loading="lazy" class="gitplay" src="Images/Icons/GitHub.png" alt="" />
+                      Github
+                    </button></a>
+                  <a href="https://youtu.be/qRuoJ1Hj-Xg" target="_blank"><button class="downseeG">
+                      <img loading="lazy" class="gitplay" src="Images/Icons/play.png" alt="" />
+                      Live Video
+                    </button></a>
+                </div>
+              </div>
+            </div>
+            <div class="OneProject"></div>
+          </div>
+        </div>
+
+
+         <!-- !My Cal.com -->
+         <div class="project-card" data-aos="fade-up">
+          <div class="OneProject mycalbg">
+            <h1 class="projectcount">04</h1>
+            <div class="OPRBGB">
+              <div class="project-title OnePRhead">MyCal.com</div>
+              <div class="project-tech-stack OnePRdetails">
+                <p class="project-description">
+                 Clone Of Calendly.com (Event Management Service).
+                </p>
+
+                <button type="button" class="ClickModalBtn buttonslide" data-bs-toggle="modal"
+                  data-bs-target="#MyCalModal" data-astry>
+                  Click here to know more
+                  <img loading="lazy" class="downsee" src="Images\Icons\downsee.gif" alt="" />
+                </button>
+                <br />
+                <div class="projlinks">
+                  <a class="project-deployed-link" href="https://mycal-704.netlify.app/" target="_blank">
+                    <button class="downseeG">
+                      <img loading="lazy" class="gitplay sitebutton" src="Images/Icons/opensite.svg" alt="" />
+                      Site
+                    </button></a>
+
+                  <a class="project-github-link" href="https://github.com/KunalMehra075/MyCal.com-Frontend" target="_blank">
+                    <button class="downseeG">
+                      <img loading="lazy" class="gitplay" src="Images/Icons/GitHub.png" alt="" />
+                      Github
+                    </button></a>
+                  <a href="https://drive.google.com/file/d/1csK2CjCSWzkvbaLbirl7EJE06QROxZO9/view" target="_blank"><button class="downseeG">
+                      <img loading="lazy" class="gitplay" src="Images/Icons/play.png" alt="" />
+                      Live Video
+                    </button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+   <!-- !PlaceMe.com -->
+   <div class="project-card" data-aos="fade-up">
+    <div class="OneProject placemebg">
+      <h1 class="projectcount">05</h1>
+      <div class="OPRBGB">
+        <div class="project-title OnePRhead">PlaceMe.com</div>
+        <div class="project-tech-stack OnePRdetails">
+          <p class="project-description">
+           Clone Of Naukri.com (Job Hunting Web Service).
+          </p>
+
+          <button type="button" class="ClickModalBtn buttonslide" data-bs-toggle="modal"
+            data-bs-target="#PlaceMeModal" data-placeme>
+            Click here to know more
+            <img loading="lazy" class="downsee" src="Images\Icons\downsee.gif" alt="" />
+          </button>
+          <br />
+          <div class="projlinks">
+            <a class="project-deployed-link" href="https://placeme750.netlify.app/" target="_blank">
+              <button class="downseeG">
+                <img loading="lazy" class="gitplay sitebutton" src="Images/Icons/opensite.svg" alt="" />
+                Site
+              </button></a>
+
+            <a class="project-github-link" href="https://github.com/KunalMehra075/obscene-icicle-4134" target="_blank">
+              <button class="downseeG">
+                <img loading="lazy" class="gitplay" src="Images/Icons/GitHub.png" alt="" />
+                Github
+              </button></a>
+            <a href="https://www.youtube.com/watch?v=R_kWySXK4l4" target="_blank"><button class="downseeG">
+                <img loading="lazy" class="gitplay" src="Images/Icons/play.png" alt="" />
+                Live Video
+              </button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+       
+
+       
+       
+      </div>
+    </section>
+
+    <!--*--------------------------------------------- <StyleZilla Modal> ----------------------------------------------->
+    <div id="MODAL">
+      <!-- Modal -->
+      <div class="modal fade" id="StyleZillaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                <h1><b>Project Stylezilla.com</b></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="DetailsModalBox">
+                <table>
+                  <tr>
+                    <td><b>Name</b></td>
+                    <td>StyleZilla.com</td>
+                  </tr>
+                  <tr>
+                    <td><b>Category</b></td>
+                    <td>Clone Of lifestylestores.com</td>
+                  </tr>
+                  <tr>
+                    <td><b>Description</b></td>
+                    <td>
+                      This is an E-Commerce website which speciaizes in selling clothes and styling products.
+                      The website provides 800 brands and different types of accessories.
+
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <td><b>Type</b></td>
+                    <td>Group Project - 5 Members</td>
+                  </tr>
+                  <tr>
+                    <td><b>Duration</b></td>
+                    <td> 6 Days</td>
+                  </tr>
+                  <tr>
+                    <td><b>Features</b></td>
+                    <td>
+                      <ul>
+                        <li>Users can order products from various categories</li>
+                        <li>A complete E-comm website experiene</li>
+                        <li>Admin can modify the product and manage orders.</li>
+                        <li>Megamenu and Carousels</li>
+                        <li>Login & Signup functionalities</li>
+                      </ul>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>Tech Stack Used</b></td>
+                    <td id="teckstakmodal">
+                      <img loading="lazy" src="Images/Icons/html.png" alt="">
+                      <img loading="lazy" src="Images/Icons/css.png" alt="">
+                      <img loading="lazy" src="Images/Icons/js.png" alt="">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>Links</b></td>
+                    <td>
+                      <div class="projlinksmodal">
+                        <a href="https://stylezillajs201.netlify.app/" target="_blank">
+                          <button class="downseeGmodal">
+                            <img loading="lazy" class="gitplaymodal sitebutton" src="Images/Icons/opensite.svg" alt="">
+                            Site</button></a>
+
+                        <a href="https://github.com/SagarN21/urbane-look-6820" target="_blank">
+                          <button class="downseeGmodal">
+                            <img loading="lazy" class="gitplaymodal" src="Images/Icons/GitHub.png" alt="">
+                            Github</button></a>
+                        <a href="https://youtu.be/SkV6oL-GZm8" target="_blank">
+                          <button class="downseeGmodal">
+                            <img loading="lazy" class="gitplaymodal" src="Images/Icons/play.png" alt=""> Live
+                            Video</button></a>
+                      </div>
+                    </td>
+                  </tr>
+
+                </table>
+
+              </div>
+
+              <!-- here is project details -->
+              <div class="ImageModalsBox">
+                <label class="modalimgheads">🔷 StyleZilla.com Landing page</label>
+                <img loading="lazy" src="Images/ProjectsImgs/StyleZilla/stz1.jpg" alt="">
+                <img loading="lazy" src="Images/ProjectsImgs/StyleZilla/stz2.jpg" alt="">
+                <label class="modalimgheads">🔷 Checkout pages</label>
+                <img loading="lazy" src="Images/ProjectsImgs/StyleZilla/stz3.jpg" alt="">
+                <img loading="lazy" src="Images/ProjectsImgs/StyleZilla/stz4.jpg" alt="">
+                <img loading="lazy" src="Images/ProjectsImgs/StyleZilla/stz8.jpg" alt="">
+                <label class="modalimgheads">🔷 Login pages</label>
+                <img loading="lazy" src="Images/ProjectsImgs/StyleZilla/stz5.jpg" alt="">
+                <img loading="lazy" src="Images/ProjectsImgs/StyleZilla/stz6.jpg" alt="">
+                <img loading="lazy" src="Images/ProjectsImgs/StyleZilla/stz7.jpg" alt="">
+                <label class="modalimgheads">🔷 Admin Pages</label>
+                <img loading="lazy" src="Images/ProjectsImgs/StyleZilla/stz9.jpg" alt="">
+                <img loading="lazy" src="Images/ProjectsImgs/StyleZilla/stz10.jpg" alt="">
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--*--------------------------------------------- <Orangefrymodal> ----------------------------------------------->
+    <div id="MODAL">
+      <!-- Modal -->
+      <div class="modal fade" id="OrangeFryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                <h1><b>Project OrangeFry.com</b></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="DetailsModalBox">
+                <table>
+                  <tr>
+                    <td><b>Name</b></td>
+                    <td>OrangeFry.com</td>
+                  </tr>
+                  <tr>
+                    <td><b>Category</b></td>
+                    <td>Clone Of Pepperfry.com</td>
+                  </tr>
+                  <tr>
+                    <td><b>Description</b></td>
+                    <td>Orangefry is an Indian online marketplace for furniture and home décor.
+                      This website is fully functional website with all CRUD operations by user</td>
+                  </tr>
+                  <tr>
+                    <td><b>Type</b></td>
+                    <td>Individual Project</td>
+                  </tr>
+                  <tr>
+                    <td><b>Duration</b></td>
+                    <td> 6 Days</td>
+                  </tr>
+                  <tr>
+                    <td><b>Features</b></td>
+                    <td>
+                      <ul>
+                        <li>Users interact with it and their data will be safe forever.</li>
+                        <li>On any product, Users can comment and edit them also.</li>
+                        <li>Admin can modify the product and manage orders.</li>
+                        <li>The Admin can manage Products, Users and Comments.</li>
+                        <li>Login & Signup + Google Auth</li>
+
+                      </ul>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>Tech Stack Used</b></td>
+                    <td id="teckstakmodal">
+                      <img loading="lazy" src="Images/Icons/html.png" alt="">
+                      <img loading="lazy" src="Images/Icons/css.png" alt="">
+                      <img loading="lazy" src="Images/Icons/js.png" alt="">
+                      <img loading="lazy" src="Images/Icons/Express.png" alt="">
+                      <img loading="lazy" src="Images/Icons/mongo.png" alt="">
+                      <img loading="lazy" src="Images/Icons/node.png" alt="">
+                      <img loading="lazy" id="modalbootst" src="Images/Icons/Bootstrap_logo.svg.png" alt="">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>Links</b></td>
+                    <td>
+                      <div class="projlinksmodal">
+                        <a href="https://orangefry.netlify.app/" target="_blank">
+                          <button class="downseeGmodal">
+                            <img loading="lazy" class="gitplaymodal sitebutton" src="Images/Icons/opensite.svg" alt="">
+                            Site</button></a>
+
+                        <a href="https://github.com/KunalMehra075/tame-ink-7589" target="_blank">
+                          <button class="downseeGmodal">
+                            <img loading="lazy" class="gitplaymodal" src="Images/Icons/GitHub.png" alt="">
+                            Github</button></a>
+                        <a href="https://youtu.be/qRuoJ1Hj-Xg" target="_blank">
+                          <button class="downseeGmodal">
+                            <img loading="lazy" class="gitplaymodal" src="Images/Icons/play.png" alt=""> Live
+                            Video</button></a>
+                      </div>
+                    </td>
+                  </tr>
+
+                </table>
+
+              </div>
+              <!-- here is project details -->
+              <div class="ImageModalsBox">
+                <label class="modalimgheads">🔷 OrangeFry.com Landing pages</label>
+                <img loading="lazy" src="Images/ProjectsImgs/Orangefry/home1.jpg" alt="">
+                <img loading="lazy" src="Images/ProjectsImgs/Orangefry/home2.jpg" alt="">
+                <img loading="lazy" src="Images/ProjectsImgs/Orangefry/home3.jpg" alt="">
+                <label class="modalimgheads">🔷 Shop Products Page</label>
+                <img loading="lazy" src="Images/ProjectsImgs/Orangefry/Allproducts2.jpg" alt="">
+                <label class="modalimgheads">🔷 View-One product Page</label>
+                <img loading="lazy" src="Images/ProjectsImgs/Orangefry/Oneproduct2.jpg" alt="">
+                <label class="modalimgheads">🔷Reviews And Comments</label>
+                <img loading="lazy" src="Images/ProjectsImgs/Orangefry/Review and feedback.jpg" alt="">
+                <label class="modalimgheads">🔷 Order Summary Pages</label>
+                <img loading="lazy" src="Images/ProjectsImgs/Orangefry/order summary.jpg" alt="">
+                <img loading="lazy" src="Images/ProjectsImgs/Orangefry/adress.jpg" alt="">
+                <img loading="lazy" src="Images/ProjectsImgs/Orangefry/checkout.jpg" alt="">
+                <label class="modalimgheads">🔷 Admin Pages</label>
+                <img loading="lazy" src="Images/ProjectsImgs/Orangefry/Admin Page.jpg" alt="">
+                <label class="modalimgheads">🔷Admin Edit Product Page</label>
+                <img loading="lazy" src="Images/ProjectsImgs/Orangefry/Edit product.jpg" alt="">
+                <img loading="lazy" src="Images/ProjectsImgs/Orangefry/About website and techstack.jpg" alt="">
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--*--------------------------------------------- <Acelegal Modal> ----------------------------------------------->
+    <div id="MODAL">
+      <!-- Modal -->
+      <div class="modal fade" id="acelegalModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                <h1><b>Project Ace Legal Services</b></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="DetailsModalBox">
+                <table>
+                  <tr>
+                    <td><b>Name</b></td>
+                    <td>Ace Legal Services</td>
+                  </tr>
+                  <tr>
+                    <td><b>Category</b></td>
+                    <td>Legal Appointment Booking System</td>
+                  </tr>
+                  <tr>
+                    <td><b>Description</b></td>
+                    <td>An Orignal Web Project for Legal Booking Appointment System for users and lawyers for formal connects.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>Type</b></td>
+                    <td>Group Project consisting of 5 Members</td>
+                  </tr>
+                  <tr>
+                    <td><b>Duration</b></td>
+                    <td> 6 Days</td>
+                  </tr>
+                  <tr>
+                    <td><b>Features</b></td>
+                    <td>
+                      <ul>
+                        <li>User can look for Lawyers filter them.</li>
+                        <li>Book the Lawyer's appointment for future date</li>
+                        <li>Searching and applying for a job</li>
+                        <li>Google Auth & OTP Password reset</li>
+                        <li>Admin CRUD & Login-Signup functionalities</li>
+                      </ul>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>Tech Stack Used</b></td>
+                    <td id="teckstakmodal">
+                      <img loading="lazy" src="Images/Icons/React.png" alt="">
+                      <img loading="lazy" width="50px" src="Images/Icons/ant design.svg" alt="">
+                      <img loading="lazy" src="Images/Icons/css.png" alt="">
+                      <img loading="lazy" src="Images/Icons/js.png" alt="">
+                      <img loading="lazy" src="Images/Icons/node.png" alt="">
+                      <img loading="lazy" src="Images/Icons/Express.png" alt="">
+                      <img loading="lazy" src="Images/Icons/mongo.png" alt="">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>Links</b></td>
+                    <td>
+                      <div class="projlinksmodal">
+                        <a href="https://acelegalservices.vercel.app/" target="_blank">
+                          <button class="downseeGmodal">
+                            <img loading="lazy" class="gitplaymodal sitebutton" src="Images/Icons/opensite.svg" alt="">
+                            Site</button></a>
+
+                        <a href="https://github.com/Mr-Soni532/young-zinc-6102" target="_blank">
+                          <button class="downseeGmodal">
+                            <img loading="lazy" class="gitplaymodal" src="Images/Icons/GitHub.png" alt="">
+                            Github</button></a>
+                        <a href="https://drive.google.com/file/d/16kbipuM3rlgz-ymfc7ibTMghp0BESRfE/view?usp=share_link" target="_blank">
+                          <button class="downseeGmodal">
+                            <img loading="lazy" class="gitplaymodal" src="Images/Icons/play.png" alt=""> Live
+                            Video</button></a>
+                      </div>
+                    </td>
+                  </tr>
+
+
+                </table>
+
+              </div>
+              <!-- here is project details -->
+              <div class="ImageModalsBox">
+                <label class="modalimgheads">🔷 Ace Legal Services Landing page</label>
+                <img loading="lazy" src="Images/ProjectsImgs/AceLegal/home1.png" alt="">
+                <img loading="lazy" src="Images/ProjectsImgs/AceLegal/home2.png" alt="">
+                <label class="modalimgheads">🔷 User Dashboard Page</label>
+                <label class="modalimgheads">🔷 Lawyers Page</label>
+                <img loading="lazy" src="Images/ProjectsImgs/AceLegal/lawyers.png" alt="">
+                <label class="modalimgheads">🔷 Admin Pages</label>
+                <img loading="lazy" src="Images/ProjectsImgs/AceLegal/Adminpanel.png" alt="">
+                <img loading="lazy" src="Images/ProjectsImgs/AceLegal/admin2.png" alt="">
+                <label class="modalimgheads">🔷 Login-Signup Pages</label>
+                <img loading="lazy" src="Images/ProjectsImgs/AceLegal/login.png" alt="">
+                <img loading="lazy" src="Images/ProjectsImgs/AceLegal/Signup.png" alt="">
+
+                <!-- User Dashboard image,Admin client crud img,otp page -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--*--------------------------------------------- <MyCal Modal> ----------------------------------------------->
+    <div id="MODAL">
+      <!-- Modal -->
+      <div class="modal fade" id="MyCalModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                <h1><b>Project MyCal.com</b></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="DetailsModalBox">
+                <table>
+                  <tr>
+                    <td><b>Name</b></td>
+                    <td>MyCal.com</td>
+                  </tr>
+                  <tr>
+                    <td><b>Category</b></td>
+                    <td>Clone Of Calendly.com</td>
+                  </tr>
+                  <tr>
+                    <td><b>Description</b></td>
+                    <td>
+                      MyCal is an app for scheduling appointments, meetings, and events.
+                       Its goal is to eliminate the problematic back-and-forth when trying to nail down times.
+                
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>Type</b></td>
+                    <td>Group Project</td>
+                  </tr>
+                  <tr>
+                    <td><b>Duration</b></td>
+                    <td> 5 Days</td>
+                  </tr>
+                  <tr>
+                    <td><b>Features</b></td>
+                    <td>
+                      <ul>
+                        <li> Interactive UI/UX for best customer experiene.</li>
+                        <li> Login and Signup + Google Auth</li>
+                        <li> User can create events and mark them in calendar.</li>
+                        <li> Add workflows,get reminders and other Emailing features</li>
+                        <li> Transitions & Animations</li>
+                      </ul>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>Tech Stack Used</b></td>
+                    <td id="teckstakmodal">
+                      <img loading="lazy" src="Images/Icons/html.png" alt="">
+                      <img loading="lazy" src="Images/Icons/css.png" alt="">
+                      <img loading="lazy" src="Images/Icons/js.png" alt="">
+                      <img loading="lazy" src="Images/Icons/Express.png" alt="">
+                      <img loading="lazy" src="Images/Icons/mongo.png" alt="">
+                      <img loading="lazy" src="Images/Icons/node.png" alt="">
+                      <img loading="lazy" src="Images/ProjectsImgs/MyCal/fullcalendar.png" alt="">
+                      <img loading="lazy" id="modalbootst" src="Images/Icons/Bootstrap_logo.svg.png" alt="">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>Links</b></td>
+                    <td>
+                      <div class="projlinksmodal">
+                        <a href="https://mycal-704.netlify.app/" target="_blank">
+                          <button class="downseeGmodal">
+                            <img loading="lazy" class="gitplaymodal sitebutton" src="Images/Icons/opensite.svg" alt="">
+                            Site</button></a>
+
+                        <a href="https://github.com/KunalMehra075/MyCal.com-Frontend" target="_blank">
+                          <button class="downseeGmodal">
+                            <img loading="lazy" class="gitplaymodal" src="Images/Icons/GitHub.png" alt="">
+                            Github</button></a>
+                        <a href="https://drive.google.com/file/d/1csK2CjCSWzkvbaLbirl7EJE06QROxZO9/view" target="_blank">
+                          <button class="downseeGmodal">
+                            <img loading="lazy" class="gitplaymodal" src="Images/Icons/play.png" alt=""> Live
+                            Video</button></a>
+                      </div>
+                    </td>
+                  </tr>
+
+                </table>
+
+              </div>
+              <!-- here is project details -->
+              <div class="ImageModalsBox">
+                <label class="modalimgheads">🔷 MyCal.com Landing page</label>
+                <img loading="lazy" src="Images/ProjectsImgs/MyCal/Home Page.jpg" alt="">
+                <img loading="lazy" src="Images/ProjectsImgs/MyCal/Home Page2.jpg" alt="">
+                <label class="modalimgheads">🔷 Login-Signup page</label>
+                <img loading="lazy" src="Images/ProjectsImgs/MyCal/login.png" alt="">
+                <img loading="lazy" src="Images/ProjectsImgs/MyCal/signup.png" alt="">
+                <label class="modalimgheads">🔷 Dashoboard page</label>
+                <img loading="lazy" src="Images/ProjectsImgs/MyCal/Dashboard.png" alt="">
+                <label class="modalimgheads">🔷 Add an Event page</label>
+                <img loading="lazy" src="Images/ProjectsImgs/MyCal/createevent1.png" alt="">
+                <img loading="lazy" src="Images/ProjectsImgs/MyCal/createevent2.png" alt="">
+                <label class="modalimgheads">🔷 Calendar pages</label>
+                <img loading="lazy" src="Images/ProjectsImgs/MyCal/Calendar.png" alt="">
+                <img loading="lazy" src="Images/ProjectsImgs/MyCal/calendar2.png" alt="">
+                <img loading="lazy" src="Images/ProjectsImgs/MyCal/calendarweekview.png" alt="">
+                <label class="modalimgheads">🔷 Google Auth</label>
+                <img loading="lazy" src="Images/ProjectsImgs/MyCal/Googleauth.png" alt="">
+                <img loading="lazy" src="Images/ProjectsImgs/MyCal/workfflow.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--*--------------------------------------------- <PlaceMe Modal> ----------------------------------------------->
+    <div id="MODAL">
+      <!-- Modal -->
+      <div class="modal fade" id="PlaceMeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                <h1><b>Project PlaceMe.com</b></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="DetailsModalBox">
+                <table>
+                  <tr>
+                    <td><b>Name</b></td>
+                    <td>PlaceMe.com</td>
+                  </tr>
+                  <tr>
+                    <td><b>Category</b></td>
+                    <td>Clone Of Naukri.com</td>
+                  </tr>
+                  <tr>
+                    <td><b>Description</b></td>
+                    <td>
+                     
+      PlaceMe.com is an online job hunting platform of job applicants as well as hirers, 
+      it is a clone of Naukri.com . <br> Masai Unit Two Construct Week Project
+                
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>Type</b></td>
+                    <td>Individual Project</td>
+                  </tr>
+                  <tr>
+                    <td><b>Duration</b></td>
+                    <td> 5 Days</td>
+                  </tr>
+                  <tr>
+                    <td><b>Features</b></td>
+                    <td>
+                      <ul>
+                        <li>Interactive UI/UX for best customer experiene.</li>
+                        <li>User can Login/Signup,Search/Filter Jobs</li>
+                        <li>Add/Remove Jobs to Favorite </li>
+                        <li>Use of localstorage is implemented</li>
+                        <li>Transitions & Animations </li>
+                      </ul>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>Tech Stack Used</b></td>
+                    <td id="teckstakmodal">
+                      <img loading="lazy" src="Images/Icons/html.png" alt="">
+                      <img loading="lazy" src="Images/Icons/css.png" alt="">
+                      <img loading="lazy" src="Images/Icons/js.png" alt="">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>Links</b></td>
+                    <td>
+                      <div class="projlinksmodal">
+                        <a href="https://mycal-704.netlify.app/" target="_blank">
+                          <button class="downseeGmodal">
+                            <img loading="lazy" class="gitplaymodal sitebutton" src="Images/Icons/opensite.svg" alt="">
+                            Site</button></a>
+
+                        <a href="https://github.com/KunalMehra075/MyCal.com-Frontend" target="_blank">
+                          <button class="downseeGmodal">
+                            <img loading="lazy" class="gitplaymodal" src="Images/Icons/GitHub.png" alt="">
+                            Github</button></a>
+                        <a href="https://drive.google.com/file/d/1csK2CjCSWzkvbaLbirl7EJE06QROxZO9/view" target="_blank">
+                          <button class="downseeGmodal">
+                            <img loading="lazy" class="gitplaymodal" src="Images/Icons/play.png" alt=""> Live
+                            Video</button></a>
+                      </div>
+                    </td>
+                  </tr>
+
+                </table>
+
+              </div>
+              <!-- here is project details -->
+              <div class="ImageModalsBox">
+                <label class="modalimgheads">🔷 PlaceMe.com Landing page</label>
+                <img loading="lazy" src="Images/ProjectsImgs/placeme2/index1.png" alt="PlaceMeImage">
+                <img loading="lazy" src="Images/ProjectsImgs/placeme2/Index2.png" alt="PlaceMeImage">
+                <img loading="lazy" src="Images/ProjectsImgs/placeme2/footer.png" alt="PlaceMeImage">
+                <label class="modalimgheads">🔷 Dashboard page</label>
+                <img loading="lazy" src="Images/ProjectsImgs/placeme2/dashboard.png" alt="PlaceMeImage">
+                <img loading="lazy" src="Images/ProjectsImgs/placeme2/Jobs.png" alt="PlaceMeImage">
+                <img loading="lazy" src="Images/ProjectsImgs/placeme2/loading.png" alt="PlaceMeImage">
+                <label class="modalimgheads">🔷 Favorites page</label>
+                <img loading="lazy" src="Images/ProjectsImgs/placeme2/favorites.png" alt="PlaceMeImage">
+                <label class="modalimgheads">🔷 Apply for a job </label>
+                <img loading="lazy" src="Images/ProjectsImgs/placeme2/onejob.png" alt="PlaceMeImage">
+                <img loading="lazy" src="Images/ProjectsImgs/placeme2/Applyjob.png" alt="PlaceMeImage">
+                <label class="modalimgheads">🔷 Login & Signup </label>
+                <img loading="lazy" src="Images/ProjectsImgs/placeme2/Signup.png" alt="PlaceMeImage">
+                <img loading="lazy" src="Images/ProjectsImgs/placeme2/Login.png" alt="PlaceMeImage">
+                <label class="modalimgheads">🔷 Alerts & Notifications </label>
+                <img loading="lazy" src="Images/ProjectsImgs/placeme2/loginsuccess.png" alt="PlaceMeImage">
+                <img loading="lazy" src="Images/ProjectsImgs/placeme2/logout.png" alt="PlaceMeImage">
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--todo--------------------------------------------- <Github Section> ----------------------------------------------->
+
+    <section id="github">
+      <h1 id="Githead" class="SectionHeads" data-aos="fade-up">Github Stats <img loading="lazy" id="octopus"
+          src="Images\githubocto.png" alt="">
+      </h1>
+
+      <div id="Github_Section">
+        <!--??--------------------------------------------- <git 1> ----------------------------------------------->
+        <div class="Git1">
+
+          <div class="about section container react-activity-calendar" id="github" data-aos="fade-up">
+            <h2 class="section__title">Github contributions in the last year</h2>
+            <div id="gitloadercal" class="calendar">
+              <!-- Loading stuff -->
+              <div id="waitingforgit">
+                <div class="spinner-grow text-success" role="status" style="filter: saturate(4);">
+                </div>
+                <div> Waiting for Github Calendar</div>
+              </div>
+
+            </div>
+          </div>
+          <br>
+          <div id="gitcontri">
+            <img loading="lazy" id="github-streak-stats"
+              src="https://github-readme-streak-stats.herokuapp.com?user=KunalMehra075&theme=vue&hide_border=true&date_format=j%20M%5B%20Y%5D"
+              alt="streak" />
+            <img loading="lazy" id="github-stats-card"
+              src="https://github-readme-stats.vercel.app/api?username=KunalMehra075&show_icons=true&locale=en&&theme=vue&hide_border=true"
+              alt="ovi" />
+          </div>
+          <br>
+          <div class="gitstreak">
+            <div id="BestRepoParent">
+              <div id="BestRepos">
+                <img id="Repo1" src="https://github-readme-stats.vercel.app/api/pin/?username=KunalMehra075&repo=OrangeFryFrontend" alt="">
+                <img id="Repo2" src="https://github-readme-stats.vercel.app/api/pin/?username=KunalMehra075&repo=Ace-Legal-Services-Backend" alt="">
+                <img id="Repo3" src="https://github-readme-stats.vercel.app/api/pin/?username=Tanishka-22&repo=KK-Kushwah" alt="">
+                <img id="Repo4" src="https://github-readme-stats.vercel.app/api/pin/?username=KunalMehra075&repo=obscene-icicle-4134" alt="">
+              </div>
+            </div>
+            <img loading="lazy" id="github-top-langs"
+              src="https://github-readme-stats.vercel.app/api/top-langs/?username=KunalMehra075&theme=vue&show_icons=true&locale=en&hide_border=true"
+              alt="ovi" />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--todo--------------------------------------------- <Tech Stack Section> ----------------------------------------------->
+
+    <section id="skills">
+      <div>
+        <h1 id="techstakhead" class="SectionHeads " data-aos="fade-up">TechStack & Skills <img loading="lazy" id="catty"
+            src="Images/working cat.png" alt=""></h1>
+        <div id="TechStackBigParent">
+          <div class="TechStack2">
+            <div>
+              <center>
+                <h1 class="SkillsHeads buttonslide Techskillshead"> Technical Skills</h1>
+              </center>
+              <!-- <label style="text-decoration: underline;font-weight: 300; font-size: 20px;">My Best Skills </label> -->
+              <div class="Stack2firstParent">
+                <div class="Stack2first">
+                  <div class="skills-card skills-red">
+                    <img class="skills-card-img" src="Images/techstack/Smolicons/html-5.svg" alt="logoA3"> 
+                    <a class="skills-card-name">HTML</a>
+                  </div>
+                  <div class="skills-card skills-blue">
+                    <img class="skills-card-img" src="Images/techstack/Smolicons/css-3.svg" alt="logoA3"> 
+                    <a class="skills-card-name">CSS</a>
+                  </div>
+                  <div class="skills-card skills-yellow">
+                    <img class="skills-card-img" src="Images/techstack/Smolicons/javascript.svg" alt="logoA3"> 
+                    <a class="skills-card-name">JavaScript</a>
+                  </div>
+                  <div class="skills-card skills-green">
+                    <img class="skills-card-img" src="Images/techstack/Smolicons/nodejs-icon.svg" alt="logoA3"> 
+                    <a class="skills-card-name">Node.js</a>
+                  </div>
+                  <div class="skills-card skills-black">
+                    <img class="skills-card-img" src="Images/techstack/Smolicons/expressjs-icon.svg" alt="logoA3"> 
+                    <a class="skills-card-name">Express.js</a>
+                  </div>
+                  <div class="skills-card skills-blue">
+                    <img class="skills-card-img" src="Images/techstack/Smolicons/react-svgrepo-com.svg" alt="logoA3"> 
+                    <a class="skills-card-name">React</a>
+                  </div>
+                  <div class="skills-card skills-black">
+                    <img style="filter: saturate(4);" class="skills-card-img" src="Images/techstack/Smolicons/graphDSA.svg" alt="logoA3">
+                    <a class="skills-card-name">Data Structures & Algorithms</a>
+                     </div>
+                  <div class="skills-card skills-blue">
+                    <img class="skills-card-img" src="Images/techstack/Smolicons/mysql.svg" alt="logoA3"> 
+                    <a class="skills-card-name">MySQL</a>
+                  </div>
+                  <div class="skills-card skills-orange">
+                    <img class="skills-card-img" src="Images/techstack/Smolicons/aws-svgrepo-com.svg" alt="logoA3"> 
+                    <a class="skills-card-name">AWS</a>
+                  </div>
+                  <div class="skills-card skills-red">
+                    <img class="skills-card-img" src="Images/techstack/Smolicons/redis-svgrepo-com.svg" alt="logoA3"> 
+                    <a class="skills-card-name">Redis</a>
+                  </div>
+                  <div class="skills-card skills-blue">
+                    <img class="skills-card-img" src="Images/techstack/Smolicons/typescript-svgrepo-com.svg" alt="logoA3"> 
+                    <a class="skills-card-name">TypeScript</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="HexagonBox">
+            <div id="hex1" class="hexagon ">
+              <div><img loading="lazy" class="techhex " class="skills-card-img" src="Images/techstack/htmlB.png" alt="">
+              </div>
+            </div>
+            <div id="hex2" class="hexagon ">
+              <div><img loading="lazy" class="techhex " class="skills-card-img" src="Images/techstack/cssB.png" alt="">
+              </div>
+            </div>
+            <div id="hex3" class="hexagon ">
+              <div><img loading="lazy" class="techhex" class="skills-card-img" src="Images/techstack/exprBl.png" alt="">
+              </div>
+            </div>
+            <div id="hex4" class="hexagon ">
+              <div><img loading="lazy" class="techhex " class="skills-card-img" src="Images/techstack/js.png" alt="">
+              </div>
+            </div>
+            <div id="hex5" class="hexagon">
+              <!-- Middle One -->
+              <div> <img loading="lazy" class="gear" src="Images/Icons/gear.gif" alt=""> <label
+                  id="skillcenter">SKILLS</label>
+              </div>
+            </div>
+       
+            <div id="hex6" class="hexagon">
+              <div><img loading="lazy" class="techhex" class="skills-card-img" class="skills-card-img" src="Images/techstack/mngoB.png" alt="">
+              </div>
+            </div>
+            <div id="hex7" class="hexagon ">
+              <div><img loading="lazy" class="techhex" class="skills-card-img" class="skills-card-img" src="Images/techstack/nodeB.png" alt="">
+              </div>
+            </div>
+            <img loading="lazy" id="pg1" class="p68" src="Images/techstack/p68.png" alt="">
+            <img loading="lazy" id="pg2" class="p68" src="Images/techstack/p68.png" alt="">
+            <img loading="lazy" id="pg3" class="p68" src="Images/techstack/p68.png" alt="">
+            <img loading="lazy" id="pg4" class="p68" src="Images/techstack/p68.png" alt="">
+            <img loading="lazy" id="pg5" class="p68" src="Images/techstack/p68.png" alt="">
+            <img loading="lazy" id="pg6" class="p68" src="Images/techstack/p68.png" alt="">
+          </div>
+          <div class="TechStack2">
+
+            <div class="Stack2secondParent ">
+              <center>
+                <h1 class="SkillsHeads buttonslide"> Soft Skills</h1>
+              </center>
+              <div class="Stack2second">
+
+                <div class="skills-card skills-blue" >
+                  <img class="skills-card-img" src="Images/techstack/Smolicons/softskills/remotework.svg" alt="logoA3">
+                       <a class="skills-card-name">
+                        Remote Work-Collaboration</a>
+                  </div>
+                <div class="skills-card skills-yellow">
+                       <img class="skills-card-img" src="Images/techstack/Smolicons/softskills/teamwork.svg" alt="logoA3">
+                  <a class="skills-card-name">Teamwork</a>
+                </div>
+                <div class="skills-card skills-red" >
+                       <img class="skills-card-img" src="Images/techstack/Smolicons/softskills/leadership-svgrepo-com.svg" alt="logoA3">
+                       <a class="skills-card-name">Leadership</a>
+                </div>
+                <div class="skills-card skills-green">
+                       <img class="skills-card-img" src="Images/techstack/Smolicons/softskills/problemsolving.svg" alt="logoA3">
+                        <a class="skills-card-name">  Problem-Solving</a>
                 </div>
 
-                <div class="about-intro">
-                    <div>
-                        <img class="home-img" src="./data/photo.png" alt="">
-                    </div>
-
-                    <div class="about-self" id="user-detail-intro">
-                        <div>
-                            <p>
-                                Hello! I'm Ankit and I enjoy to create backend
-                                application <br>
-                                As a <span>Java backend developer</span>, my
-                                primary role is to <span>design</span>,
-                                <span>develop</span> ,and <span>maintain</span>
-                                the server-side components of web or mobile
-                                applications
-                                using Java programming language. I have a strong
-                                understanding of
-                                Java programming. <br> <br>
-                                I am also responsible for troubleshooting and
-                                resolving issues
-                                related to the backend, and providing technical
-                                support to end-users
-                                when needed. I am passionate about staying
-                                up-to-date with the latest
-                                advancements in backend development technologies
-                                and best practices,
-                                and I am constantly striving to improve my
-                                skills and knowledge. <br> <br>
-
-                                Here are a few technologies I’ve been working
-                                with recently: <br>
-                            </p>
-                            <table class="skill-list">
-                                <tr>
-                                    <td><span> ▹ </span>HTML</td>
-                                    <td><span> ▹ </span>Java</td>
-                                </tr>
-                                <tr>
-                                    <td><span> ▹ </span>CSS</td>
-                                    <td><span> ▹ </span>MySQL</td>
-                                </tr>
-                                <tr>
-                                    <td><span> ▹ </span>JavaScript</td>
-                                    <td><span> ▹ </span>Spring Boot</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
+                <div class="skills-card skills-orange" >
+                       <img class="skills-card-img" src="Images/techstack/Smolicons/softskills/time-management.svg" alt="logoA3">
+                       <a class="skills-card-name" > Time Management</a> </div>
                 </div>
             </div>
-        </section>
+            <div class="Stack2secondParent">
+              <center>
+                <h1 class="SkillsHeads buttonslide"> Toolset</h1>
+              </center>
+              <div class="Toolset">
 
-        <!-- =-=--=-=-=-=-=-=-=-=-=-=--=-=-SKILLS SECTION-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-        <section>
-            <div id="skills">
-                <div class="heading">
-                    <p>03.</p>
-                    <h2>SKILLS</h2>
-                    <hr>
+
+
+                <div >
+                  <img loading="lazy" class="Toolset-Image" width="90%" src="Images\toolset/q1.png" alt="">
+             
                 </div>
-
-                <div class="tech">
-                    <h2>
-                        Languages I know...
-                    </h2>
+                <div >
+                  <img loading="lazy" class="Toolset-Image" width="90%" src="Images\toolset/q8.png" alt="">
+                
                 </div>
-                <div class="language-list">
-                    <div class="skills-card">
-                        <a href="#" class="ag-course-item_link">
-                            <div class="ag-course-item_bg"></div>
-
-                            <div class="ag-course-item_title">
-                                <img class="skills-card-img"
-                                    src="https://skillicons.dev/icons?i=html"
-                                    alt="">
-                            </div>
-
-                            <div class="skills-card-name">
-                                HTML
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="skills-card">
-                        <a href="#" class="ag-course-item_link">
-                            <div class="ag-course-item_bg"></div>
-
-                            <div class="ag-course-item_title">
-                                <img class="skills-card-img"
-                                    src="https://skillicons.dev/icons?i=css"
-                                    alt="">
-                            </div>
-
-                            <div class="skills-card-name">
-                                CSS
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="skills-card">
-                        <a href="#" class="ag-course-item_link">
-                            <div class="ag-course-item_bg"></div>
-
-                            <div class="ag-course-item_title">
-                                <img class="skills-card-img"
-                                    src="https://skillicons.dev/icons?i=javascript"
-                                    alt="">
-                            </div>
-
-                            <div class="skills-card-name">
-                                JavaScript
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="skills-card">
-                        <a href="#" class="ag-course-item_link">
-                            <div class="ag-course-item_bg"></div>
-
-                            <div class="ag-course-item_title">
-                                <img class="skills-card-img"
-                                    src="https://skillicons.dev/icons?i=java"
-                                    alt="">
-                            </div>
-
-                            <div class="skills-card-name">
-                                Java
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="skills-card">
-                        <a href="#" class="ag-course-item_link">
-                            <div class="ag-course-item_bg"></div>
-
-                            <div class="ag-course-item_title">
-                                <img class="skills-card-img"
-                                    src="https://skillicons.dev/icons?i=mysql"
-                                    alt="">
-                            </div>
-
-                            <div class="skills-card-name">
-                                MySQL
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="skills-card">
-                        <a href="#" class="ag-course-item_link">
-                            <div class="ag-course-item_bg"></div>
-
-                            <div class="ag-course-item_title">
-                                <img class="skills-card-img"
-                                    src="https://skillicons.dev/icons?i=cpp"
-                                    alt="">
-                            </div>
-
-                            <div class="skills-card-name">
-                                C++
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="tech">
-                    <h2>
-                        Tools and FrameWorks I used...
-                    </h2>
-                </div>
-                <div class="language-list">
-                    <div class="skills-card">
-                        <a href="#" class="ag-course-item_link">
-                            <div class="ag-course-item_bg"></div>
-
-                            <div class="ag-course-item_title">
-                                <img class="skills-card-img"
-                                    src="https://skillicons.dev/icons?i=github"
-                                    alt="">
-                            </div>
-
-                            <div class="skills-card-name">
-                                GitHub
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="skills-card">
-                        <a href="#" class="ag-course-item_link">
-                            <div class="ag-course-item_bg"></div>
-
-                            <div class="ag-course-item_title">
-                                <img class="skills-card-img"
-                                    src="https://skillicons.dev/icons?i=idea"
-                                    alt="">
-                            </div>
-
-                            <div class="skills-card-name">
-                                intellij
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="skills-card">
-                        <a href="#" class="ag-course-item_link">
-                            <div class="ag-course-item_bg"></div>
-
-                            <div class="ag-course-item_title">
-                                <img class="skills-card-img"
-                                    src="https://skillicons.dev/icons?i=linux"
-                                    alt="">
-                            </div>
-
-                            <div class="skills-card-name">
-                                Linux
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="skills-card">
-                        <a href="#" class="ag-course-item_link">
-                            <div class="ag-course-item_bg"></div>
-
-                            <div class="ag-course-item_title">
-                                <img class="skills-card-img"
-                                    src="https://skillicons.dev/icons?i=spring"
-                                    alt="">
-                            </div>
-
-                            <div class="skills-card-name">
-                                Spring
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="skills-card">
-                        <a href="#" class="ag-course-item_link">
-                            <div class="ag-course-item_bg"></div>
-
-                            <div class="ag-course-item_title">
-                                <img class="skills-card-img"
-                                    src="https://skillicons.dev/icons?i=vscode"
-                                    alt="">
-                            </div>
-
-                            <div class="skills-card-name">
-                                VSCode
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="skills-card">
-                        <a href="#" class="ag-course-item_link">
-                            <div class="ag-course-item_bg"></div>
-
-                            <div class="ag-course-item_title">
-                                <img class="skills-card-img"
-                                    src="https://skillicons.dev/icons?i=maven"
-                                    alt="">
-                            </div>
-
-                            <div class="skills-card-name">
-                                Maven
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- =-=-=-=--=--=-==-=-=-=-=-=-=-=PROJECT SECTION-=-=-=-=----=-=-=-=-=-=-=-=-=-=-=-= -->
-        <section>
-            <div id="projects">
-                <div class="heading">
-                    <p>04.</p>
-                    <h2>PROJECT</h2>
-                    <hr>
-                </div>
-
-                <div class="project-block">
-                    <!-- 1.  -->
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="./data/Screenshot (113).png" alt="">
-                        </div>
-
-                        <div class="project-info">
-                            <h3 class="project-title">MediKit</h3>
-                            <p class="project-description">
-                                MediKit is one of the trusted pharmacy and
-                                medical stores offering pharmaceutical and
-                                healthcare products.
-                            </p>
-                            <p class="project-tech-stack"><span>Tech Stack:
-                                </span> HTML | CSS | JavaScript</p>
-                            <a class="project-github-link"
-                                href="https://github.com/Github2k10/delicious-vacation-7867"
-                                target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    role="img" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather
-                                    feather-github"><title>GitHub</title><path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14
-                                        6v-3.87a3.37 3.37 0 0
-                                        0-.94-2.61c3.14-.35 6.44-1.54
-                                        6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07
-                                        0 0 0 19.91 1S18.73.65 16 2.48a13.38
-                                        13.38 0 0 0-7 0C6.27.65 5.09 1 5.09
-                                        1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0
-                                        0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37
-                                        3.37 0 0 0 9 18.13V22"></path></svg>
-                            </a>
-
-                            <a class="project-deployed-link"
-                                href="https://adorable-truffle-f04627.netlify.app"
-                                target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    role="img" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather
-                                    feather-external-link"><path d="M18
-                                        13v6a2 2 0 0 1-2 2H5a2 2 0 0
-                                        1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline
-                                        points="15 3 21 3 21 9"></polyline><line
-                                        x1="10" y1="14" x2="21" y2="3"></line></svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- 2.  -->
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="./data/Screenshot (114).png" alt="">
-                        </div>
-
-                        <div class="project-info">
-                            <h3 class="project-title">Media Flow</h3>
-                            <p class="project-description">
-                                Media Flow is a software application for the
-                                web, design to manage and schedule posts of
-                                Instagram, twitter, LinkedIn, Facebook, as
-                                well as analyze their results and engage with
-                                their community.
-                            </p>
-                            <p class="project-tech-stack"><span>Tech Stack:
-                                </span> HTML | CSS | JavaScript</p>
-                            <a class="project-github-link"
-                                href="https://github.com/Github2k10/Media_Flow"
-                                target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    role="img" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather
-                                    feather-github"><title>GitHub</title><path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14
-                                        6v-3.87a3.37 3.37 0 0
-                                        0-.94-2.61c3.14-.35 6.44-1.54
-                                        6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07
-                                        0 0 0 19.91 1S18.73.65 16 2.48a13.38
-                                        13.38 0 0 0-7 0C6.27.65 5.09 1 5.09
-                                        1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0
-                                        0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37
-                                        3.37 0 0 0 9 18.13V22"></path></svg>
-                            </a>
-
-                            <a class="project-deployed-link"
-                                href="https://media-flow.netlify.app/"
-                                target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    role="img" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather
-                                    feather-external-link"><path d="M18
-                                        13v6a2 2 0 0 1-2 2H5a2 2 0 0
-                                        1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline
-                                        points="15 3 21 3 21 9"></polyline><line
-                                        x1="10" y1="14" x2="21" y2="3"></line></svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- 3.  -->
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="./data/project-3-img.png" alt="">
-                        </div>
-
-                        <div class="project-info">
-                            <h3 class="project-title">MGNREGA</h3>
-                            <p class="project-description">
-                                The MGNREGA is an java application designed to
-                                provide BDO and Gram Panchayat Member (GPM) of
-                                Block Office with a personalized easy-to-utilize
-                                user experience for creating, assigning and
-                                managing
-                                the project and employee.
-                            </p>
-                            <p class="project-tech-stack"><span>Tech Stack:
-                                </span> Java | MySql | JDBC</p>
-                            <a class="project-github-link"
-                                href="https://github.com/Github2k10/deranged-bikes-7325"
-                                target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    role="img" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather
-                                    feather-github"><title>GitHub</title><path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14
-                                        6v-3.87a3.37 3.37 0 0
-                                        0-.94-2.61c3.14-.35 6.44-1.54
-                                        6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07
-                                        0 0 0 19.91 1S18.73.65 16 2.48a13.38
-                                        13.38 0 0 0-7 0C6.27.65 5.09 1 5.09
-                                        1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0
-                                        0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37
-                                        3.37 0 0 0 9 18.13V22"></path></svg>
-                            </a>
-
-                            <a class="project-deployed-link" href="#"
-                                target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    role="img" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather
-                                    feather-external-link"><path d="M18
-                                        13v6a2 2 0 0 1-2 2H5a2 2 0 0
-                                        1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline
-                                        points="15 3 21 3 21 9"></polyline><line
-                                        x1="10" y1="14" x2="21" y2="3"></line></svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- 4.  -->
-                    <div class="project-card">
-                        <div class="project-img">
-                            <img src="./data/Screenshot (113).png" alt="">
-                        </div>
-
-                        <div class="project-info">
-                            <h3 class="project-title">MediKit</h3>
-                            <p class="project-description">
-                                MediKit is one of the trusted pharmacy and
-                                medical stores offering pharmaceutical and
-                                healthcare products.
-                            </p>
-                            <p class="project-tech-stack"><span>Tech Stack:
-                                </span> HTML | CSS | JavaScript</p>
-                            <a class="project-github-link"
-                                href="https://github.com/Github2k10/delicious-vacation-7867"
-                                target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    role="img" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather
-                                    feather-github"><title>GitHub</title><path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14
-                                        6v-3.87a3.37 3.37 0 0
-                                        0-.94-2.61c3.14-.35 6.44-1.54
-                                        6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07
-                                        0 0 0 19.91 1S18.73.65 16 2.48a13.38
-                                        13.38 0 0 0-7 0C6.27.65 5.09 1 5.09
-                                        1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0
-                                        0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37
-                                        3.37 0 0 0 9 18.13V22"></path></svg>
-                            </a>
-
-                            <a class="project-deployed-link"
-                                href="https://adorable-truffle-f04627.netlify.app"
-                                target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    role="img" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather
-                                    feather-external-link"><path d="M18
-                                        13v6a2 2 0 0 1-2 2H5a2 2 0 0
-                                        1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline
-                                        points="15 3 21 3 21 9"></polyline><line
-                                        x1="10" y1="14" x2="21" y2="3"></line></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- =-=--=--=--==-=-=--=-=--=-=-=--=-=-GITHUB SECTIONS=-=-----=-----=-------=-=---=- -->
-        <section>
-            <div id="github">
-                <div class="heading">
-                    <hr>
-                    <h2 style="margin-left: 15px;">GITHUB STATS</h2>
-                    <hr>
-                </div>
-
                 <div>
-                    <div>
-                        <img id="github-top-langs"
-                            src="https://github-readme-stats.vercel.app/api/top-langs/?username=Github2k10&layout=compact&langs_count=10&theme=algolia&hide_border=true"
-                            alt="">
-                    </div>
-
-                    <div>
-                        <img id="github-trophy"
-                            src="https://github-profile-trophy.vercel.app/?username=github2k10&theme=juicyfresh&column=4&no-bg=true&no-frame=true"
-                            alt="">
-                    </div>
-
-                    <div>
-                        <img id="github-stats-card"
-                            src="https://github-readme-stats.vercel.app/api?username=Github2k10&show_icons=true&theme=algolia&hide_border=true"
-                            alt="">
-                    </div>
-
-                    <div>
-                        <img id="github-streak-stats"
-                            src="https://github-readme-streak-stats.herokuapp.com?user=Github2k10&theme=algolia&hide_border=true"
-                            alt="">
-                    </div>
+                  <img loading="lazy" class="Toolset-Image" width="99%" src="Images\toolset/q2.png" alt="">
+                
+                </div>
+                <div >
+                  <img loading="lazy" class="Toolset-Image" width="90%" src="Images\toolset/boots.png" alt="">
+                
+                </div>
+                <div >
+                  <img loading="lazy" class="Toolset-Image" width="90%" src="Images\toolset/q3.png" alt="">
+        
+                </div>
+                <div >
+                  <img loading="lazy" class="Toolset-Image" width="90%" src="Images\toolset/q9.svg" alt="">
+          
+                </div>
+                <div>
+                  <img loading="lazy" class="Toolset-Image" width="90%" src="Images\toolset/q5.jpeg" alt="">
+          
+                </div>
+                <div >
+                  <img loading="lazy" class="Toolset-Image" width="90%" src="Images\toolset/q4.png" alt="">
+      
                 </div>
 
-                <div class="react-activity-calendar">
-                    <div class="calendar">
-                        <!-- Loading stuff -->
-                        Loading the data just for you.
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-CONTACT SECTION-=-=-=-=--=-=-=-=-=-=-=-=-=-= -->
-        <section>
-            <div id="contact">
-                <div class="heading">
-                    <p>05.</p>
-                    <h2>CONTACT</h2>
-                    <hr>
+    <!--todo--------------------------------------------- <Contact Me Section> ----------------------------------------------->
+
+    <section id="contact">
+      <div id="ContactMe_Section">
+        <h1 class="SectionHeads">Contact Me </h1>
+        <section id="connect">
+          </span>
+          <div class="connectsection">
+            <div><label id="letusconnect">Let's <br> Connect</label></div>
+            <div>
+              <form id="letsconnectform">
+                <div class="connecttwonamesdiv">
+                  <label for="">First Name <br><input id="firstname" type="text" required></label>
+                  <label for="">last Name <br><input id="lastname" type="text" required></label>
+                </div><label for="">Email* <br><input id="email" type="email" name="" id="" required></label>
+                <br><label for="">Write a message <br><textarea name="EnterText" id="textmessage" cols="50" rows="3"
+                    required> </textarea></label>
+                <div id="connectsubmitdiv">
+                  <input id="submit-button" type="submit">
                 </div>
-
-                <h1>
-                    Love to hear from you, <br>Get in touch 👋
-                </h1>
-
-                <div class="container">
-                    <div class="contactInfo">
-                        <div class="details">
-                            <h2>Contact Info</h2>
-                            <ul class="info">
-                                <li>
-                                    <span><img src="./data/location.png"></span>
-                                    <span>New Delhi, India</span>
-                                </li>
-
-                                <li>
-                                    <span><img src="./data/mail.png"></span>
-                                    <span id="contact-email">ankitsingh40068@gmail</span>
-                                </li>
-
-                                <li>
-                                    <span><img src="./data/call.png"></span>
-                                    <span id="contact-phone">+91 7428562513</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <ul class="sci">
-                            <li><a href="https://www.linkedin.com/in/ankit-kumar-2k21/" target="_blank">
-                                <i id="linkin" class="fa-brands fa-linkedin-in"></i>
-                            </a></li>
-                            <li><a href="https://github.com/Github2k10/" target="_blank">
-                                <i id="git" class="fa-brands fa-github"></i>
-                            </a></li>
-                            <li> <a href="https://twitter.com/AnkitKu1777768" target="_blank">
-                                <i id="twitter" class="fa-brands fa-twitter"></i>
-                            </a></li>
-                        </ul>
-                    </div>
-
-
-                    <div class="contactForm">
-                        <h2>Send a Message</h2>
-                        <div class="formbox">
-                            <div class="inputbox w50">
-                                <input type="text" required>
-                                <span>First Name</span>
-                            </div>
-
-                            <div class="inputbox w50">
-                                <input type="text" required>
-                                <span>Last Name</span>
-                            </div>
-
-                            <div class="inputbox w50">
-                                <input type="text" required>
-                                <span>Emai Id</span>
-                            </div>
-
-                            <div class="inputbox w50">
-                                <input type="text" required>
-                                <span>Mobile No.</span>
-                            </div>
-
-                            <div class="inputbox w100">
-                                <textarea  required></textarea>
-                                <span>Write your message here...</span>
-                            </div>
-
-                            <div class="inputbox w100">
-                                <input type="submit" value="send">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </form>
             </div>
-        </section>
-    </body>
+          </div>
+
+          <div></div>
+      </div>
+
+    </section>
+
+
+  </main>
+  <!--!--------------------------------------------- Footer ----------------------------------------------->
+  <footer>
+    <div>
+      <div class="ballsect2" id="ball5"></div>
+      <div class="ballsect2" id="ball6"></div>
+      <div class="ballsect2" id="ball7"></div>
+      <div class="ballsect2" id="ball8"></div>
+    </div>
+    <div>
+      <div id="footercenter">
+        <div>
+          <h3>Connect With Me</h3>
+        </div>
+        <div class="footerimgs">
+          <div><a target="_blank" href="https://www.linkedin.com/in/kunal-mehra-thelifeofcoder/">
+              <img loading="lazy" width="50px" src="Images/social/linked.svg "></a></div>
+          <div><a target="_blank" href="https://twitter.com/KunalMe96052494">
+              <img loading="lazy" width="50px" src="Images/social/twitter.svg" /></a></div>
+          <div><a target="_blank" href="https://github.com/KunalMehra075">
+              <img loading="lazy" width="50px" src="Images/social/github.svg" /></a></div>
+          <div><a target="_blank" href="https://www.facebook.com/profile.php?id=100046670616350">
+              <img loading="lazy" width="50px" src="Images/social/fb.svg" /></a></div>
+        </div>
+
+      </div>
+      <div style="text-align: center;">
+        <label><b>Email</b> : kunalmehra240304@gmail.com</label><br>
+        <label><b>Address</b>: Ranjhi Jabalpur M.P.</label><br>
+        <label style="font-weight: 400;color: rgb(147, 142, 142);padding-bottom: 30px;">All copyrights reserved®
+        </label>
+        <br>
+      </div>
+    </div>
+  </footer>
+
+  <!--?-------------------------- <AOS> --------------------------------->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+
+  </script>
+
+</body>
 </html>
-
-<script src="https://kit.fontawesome.com/1bffa3735e.js"
-    crossorigin="anonymous"></script>
-<script src="./Script/index.js"></script>
-
-<script
-    src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-<script>
-    GitHubCalendar(".calendar", "Github2k10");
-    GitHubCalendar(".calendar", "Github2k10", { responsive: true });
-</script>
-<!-- <div>
-    <div class="details">
-        <h3 id="contact-phone">+91 7428562513</h3>
-        <h3 id="contact-email">ankitsingh40068@gmail.com</h3>
-    </div>
-
-    <div class="contact-icon">
-        <a id="contact-github" href="https://github.com/Github2k10/">
-            <i id="git" class="fa-brands fa-github"></i>
-        </a>
-
-        <a id="contact-linkedin" href="https://www.linkedin.com/in/ankit-kumar-2k21/">
-            <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-
-        <a href="https://www.instagram.com/___its.phoenix/">
-            <i id="insta" class="fa-brands fa-instagram"></i>
-        </a>
-    </div>
-</div> -->
