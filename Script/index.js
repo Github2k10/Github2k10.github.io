@@ -4,8 +4,8 @@ let resumedownload1 = document
     window.open("./data/Ankit-Kumar-Resume.pdf", "_blank");
   });
 
-  let resumedownload2 = document
-  .getElementById("resume-button-2")
-  .addEventListener("click", () => {
-    window.location.href = "./data/Ankit-Kumar-Resume.pdf";
-  });
+  // let resumedownload2 = document
+  // .getElementById("resume-button-2")
+  // .addEventListener("click", () => {
+  //   window.location.href = "./data/Ankit-Kumar-Resume.pdf";
+  // });
